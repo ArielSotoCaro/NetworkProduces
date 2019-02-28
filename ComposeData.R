@@ -3,9 +3,9 @@ library(data.table) # rbindlist
 library(stringr)
 library(dplyr)
 
-setwd("C:/Users/Ariel/Dropbox/UFL/Spatial Networks/Project")
+setwd("C:/Users/Ariel/Dropbox/UFL/Spatial Networks/Project/NetworkProduces")
 
-filesFrom <- "C:/Users/Ariel/Dropbox/RESEARCH/Material tentativo"
+filesFrom <- "C:/Users/Ariel/Dropbox/UFL/Spatial Networks/Project/NetworkProduces"
 
 
 # ==================
@@ -71,7 +71,7 @@ ChangeNames <- function(x){
                         "(Puebla).*$" = "Puebla",
                         "(Querétaro).*$" = "Queretaro",
                         "(Sonora).*$" = "Sonora",
-                        "(Quintana).*$" = "Quintana Roo",
+                        "(Quintana Roo).*$" = "Quintana Roo",
                         "(Sinaloa).*$" = "Sinaloa",
                         "(Tamaulipas).*$" = "Tamaulipas",
                         "(Tabasco).*$" = "Tabasco",
@@ -105,7 +105,7 @@ ChangeNames <- function(x){
                       "Puebla" = "Puebla",
                       "Querétaro" = "Queretaro",
                       "Sonora" = "Sonora",
-                      "Quintana" = "Quintana Roo",
+                      "Quintana Roo" = "Quintana Roo",
                       "Sinaloa" = "Sinaloa",
                       "Tamaulipas" = "Tamaulipas",
                       "Tabasco" = "Tabasco",
@@ -156,7 +156,7 @@ avocadoList3 <- avocadoList3 %>% group_by(year,Origen,Destino) %>% summarise(mPr
 
 # Appending
 avocadoTotal <- list(avocadoList1,avocadoList2,avocadoList3)
-avocadoTotal <- data.frame(avocadoTotal,produce=rep("avocado",nrow(avocadoTotal)))
+# avocadoTotal <- data.frame(avocadoTotal,produce=rep("avocado",nrow(avocadoTotal)))
 
 
 Avocado <- rbindlist(avocadoTotal)
@@ -180,10 +180,16 @@ corn <- CorrectClass(corn)
 # Changing names of Origin and Destination observations
 corn <- ChangeNames(corn)
 
-
 ## add year ----
+# create year index
+Years  <- c() 
+for(j in 1998:2018){
+  test <- rep(j,12)
+  Years <- append(Years, test)
+}
+
 for( i in seq_along(corn)){
-  corn[[i]]$year <- rep(1997+i,nrow(corn[[i]]))
+  corn[[i]]$year <- Years[i]
   corn[[i]] <- as.data.table(corn[[i]])
 }
 
@@ -231,6 +237,24 @@ tomatoList <- data.frame(tomatoList,produce=rep("tomato",nrow(tomatoList)))
 
 Tomato <- data.table(tomatoList)
 
+
+#
+# Adding coordenates ====
+#
+
+# Load coordeantes info
+coor <- read.xlsx("States_coordenates.xlsx", sheetName = "Sheet1")
+
+Tomato <- inner_join(Tomato,coor,by = c("Origen" = "States"))
+Tomato <- inner_join(Tomato,coor,by = c("Destino" = "States"),suffix = c(".Origin",".Destiny"))
+
+Corn <- inner_join(Corn,coor,by = c("Origen" = "States"))
+Corn <- inner_join(Corn,coor,by = c("Destino" = "States"),suffix = c(".Origin",".Destiny"))
+
+Avocado <- inner_join(Avocado,coor,by = c("Origen" = "States"))
+Avocado <- inner_join(Avocado,coor,by = c("Destino" = "States"),suffix = c(".Origin",".Destiny"))
+
+
 # ==================
 # STORING DATA
 # ..................
@@ -239,8 +263,8 @@ write.xlsx(Avocado, "Avocado_data.xlsx")
 write.xlsx(Corn, "Corn_data.xlsx")
 write.xlsx(Tomato, "Tomato_data.xlsx")
 
-# create just one file
-Produces <- bind_rows(Avocado,Tomato)
-Produces <- bind_rows(Produces,Corn)
-
-write.xlsx(Produces, "Total_produce_data.xlsx")
+# # create just one file
+# Produces <- bind_rows(Avocado,Tomato)
+# Produces <- bind_rows(Produces,Corn)
+# 
+# write.xlsx(Produces, "Total_produce_data.xlsx")

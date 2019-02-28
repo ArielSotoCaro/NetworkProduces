@@ -1,0 +1,1693 @@
+<?xml version="1.0" standalone="yes"?>
+
+<DynamicMetaNetwork id="Avocado">
+<MetaNetwork id="1998/01/01 00:00:00" date="19980101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<propertyIdentities>
+<propertyIdentity id="Latitude" type="number" singleValued="false"/>
+<propertyIdentity id="Longitude" type="number" singleValued="false"/></propertyIdentities>
+<node id="Distrito Federal">
+<property id="Longitude" value="-99.1309882"/>
+<property id="Latitude" value="19.44244244"/></node>
+<node id="Jalisco">
+<property id="Longitude" value="-104.3699966"/>
+<property id="Latitude" value="19.77001935"/></node>
+<node id="Michoacan">
+<property id="Longitude" value="-100.569996"/>
+<property id="Latitude" value="19.67997316"/></node>
+<node id="Nayarit">
+<property id="Longitude" value="-105.2200481"/>
+<property id="Latitude" value="21.81999758"/></node>
+<node id="Campeche">
+<property id="Longitude" value="-91.82448019"/>
+<property id="Latitude" value="18.65365928"/></node>
+<node id="Quintana Roo">
+<property id="Longitude" value="-86.7114549"/>
+<property id="Latitude" value="21.20839057"/></node>
+<node id="Tabasco">
+<property id="Longitude" value="-93.22997888"/>
+<property id="Latitude" value="18.40002545"/></node>
+<node id="Yucatan">
+<property id="Longitude" value="-89.27998743"/>
+<property id="Latitude" value="21.09998985"/></node>
+<node id="Aguascalientes">
+<property id="Longitude" value="-102.2904135"/>
+<property id="Latitude" value="21.87945992"/></node>
+<node id="Baja California">
+<property id="Longitude" value="-116.0092603"/>
+<property id="Latitude" value="30.76405113"/></node>
+<node id="Baja California Sur">
+<property id="Longitude" value="-111.3516635"/>
+<property id="Latitude" value="26.01333335"/></node>
+<node id="Chiapas">
+<property id="Longitude" value="-92.63337447"/>
+<property id="Latitude" value="16.74999697"/></node>
+<node id="Chihuahua">
+<property id="Longitude" value="-105.6666358"/>
+<property id="Latitude" value="26.93335472"/></node>
+<node id="Coahuila">
+<property id="Longitude" value="-100.8499789"/>
+<property id="Latitude" value="28.32998781"/></node>
+<node id="Colima">
+<property id="Longitude" value="-103.8799748"/>
+<property id="Latitude" value="18.92038129"/></node>
+<node id="Durango">
+<property id="Longitude" value="-103.5000238"/>
+<property id="Latitude" value="25.57005292"/></node>
+<node id="Guanajuato">
+<property id="Longitude" value="-101.4999909"/>
+<property id="Latitude" value="20.67001609"/></node>
+<node id="Guerrero">
+<property id="Longitude" value="-99.5000096"/>
+<property id="Latitude" value="17.54997398"/></node>
+<node id="Hidalgo">
+<property id="Longitude" value="-98.73003076"/>
+<property id="Latitude" value="20.17043418"/></node>
+<node id="Mexico">
+<property id="Longitude" value="-99.02998661"/>
+<property id="Latitude" value="19.41001548"/></node>
+<node id="Morelos">
+<property id="Longitude" value="-99.23999964"/>
+<property id="Latitude" value="18.92110476"/></node>
+<node id="Nuevo Leon">
+<property id="Longitude" value="-99.83998885"/>
+<property id="Latitude" value="25.1899986"/></node>
+<node id="Oaxaca">
+<property id="Longitude" value="-95.01999882"/>
+<property id="Latitude" value="16.42999066"/></node>
+<node id="Puebla">
+<property id="Longitude" value="-98.44999618"/>
+<property id="Latitude" value="18.90002077"/></node>
+<node id="Queretaro">
+<property id="Longitude" value="-100.0000308"/>
+<property id="Latitude" value="20.37998212"/></node>
+<node id="San Luis Potosi">
+<property id="Longitude" value="-99.66999923"/>
+<property id="Latitude" value="22.00001243"/></node>
+<node id="Sinaloa">
+<property id="Longitude" value="-106.2300381"/>
+<property id="Latitude" value="23.19999086"/></node>
+<node id="Sonora">
+<property id="Longitude" value="-109.9299931"/>
+<property id="Latitude" value="27.58000775"/></node>
+<node id="Tamaulipas">
+<property id="Longitude" value="-98.95001734"/>
+<property id="Latitude" value="22.73335268"/></node>
+<node id="Tlaxcala">
+<property id="Longitude" value="-98.2300096"/>
+<property id="Latitude" value="19.31999514"/></node>
+<node id="Veracruz">
+<property id="Longitude" value="-94.73999007"/>
+<property id="Latitude" value="17.93997601"/></node>
+<node id="Zacatecas">
+<property id="Longitude" value="-102.88001"/>
+<property id="Latitude" value="22.35001691"/></node>
+</nodeclass>
+<nodeclass type="Agent" id="D_market">
+<propertyIdentities>
+<propertyIdentity id="Latitude" type="number" singleValued="false"/>
+<propertyIdentity id="Longitude" type="number" singleValued="false"/></propertyIdentities>
+<node id="Campeche">
+<property id="Longitude" value="-91.82448019"/>
+<property id="Latitude" value="18.65365928"/></node>
+<node id="Guerrero">
+<property id="Longitude" value="-99.5000096"/>
+<property id="Latitude" value="17.54997398"/></node>
+<node id="Oaxaca">
+<property id="Longitude" value="-95.01999882"/>
+<property id="Latitude" value="16.42999066"/></node>
+<node id="Quintana Roo">
+<property id="Longitude" value="-86.7114549"/>
+<property id="Latitude" value="21.20839057"/></node>
+<node id="Tabasco">
+<property id="Longitude" value="-93.22997888"/>
+<property id="Latitude" value="18.40002545"/></node>
+<node id="Yucatan">
+<property id="Longitude" value="-89.27998743"/>
+<property id="Latitude" value="21.09998985"/></node>
+<node id="Baja California">
+<property id="Longitude" value="-116.0092603"/>
+<property id="Latitude" value="30.76405113"/></node>
+<node id="Sinaloa">
+<property id="Longitude" value="-106.2300381"/>
+<property id="Latitude" value="23.19999086"/></node>
+<node id="Aguascalientes">
+<property id="Longitude" value="-102.2904135"/>
+<property id="Latitude" value="21.87945992"/></node>
+<node id="Chiapas">
+<property id="Longitude" value="-92.63337447"/>
+<property id="Latitude" value="16.74999697"/></node>
+<node id="Coahuila">
+<property id="Longitude" value="-100.8499789"/>
+<property id="Latitude" value="28.32998781"/></node>
+<node id="Distrito Federal">
+<property id="Longitude" value="-99.1309882"/>
+<property id="Latitude" value="19.44244244"/></node>
+<node id="Durango">
+<property id="Longitude" value="-103.5000238"/>
+<property id="Latitude" value="25.57005292"/></node>
+<node id="Guanajuato">
+<property id="Longitude" value="-101.4999909"/>
+<property id="Latitude" value="20.67001609"/></node>
+<node id="Jalisco">
+<property id="Longitude" value="-104.3699966"/>
+<property id="Latitude" value="19.77001935"/></node>
+<node id="Mexico">
+<property id="Longitude" value="-99.02998661"/>
+<property id="Latitude" value="19.41001548"/></node>
+<node id="Michoacan">
+<property id="Longitude" value="-100.569996"/>
+<property id="Latitude" value="19.67997316"/></node>
+<node id="Morelos">
+<property id="Longitude" value="-99.23999964"/>
+<property id="Latitude" value="18.92110476"/></node>
+<node id="Nayarit">
+<property id="Longitude" value="-105.2200481"/>
+<property id="Latitude" value="21.81999758"/></node>
+<node id="Nuevo Leon">
+<property id="Longitude" value="-99.83998885"/>
+<property id="Latitude" value="25.1899986"/></node>
+<node id="Puebla">
+<property id="Longitude" value="-98.44999618"/>
+<property id="Latitude" value="18.90002077"/></node>
+<node id="Queretaro">
+<property id="Longitude" value="-100.0000308"/>
+<property id="Latitude" value="20.37998212"/></node>
+<node id="Sonora">
+<property id="Longitude" value="-109.9299931"/>
+<property id="Latitude" value="27.58000775"/></node>
+<node id="Tamaulipas">
+<property id="Longitude" value="-98.95001734"/>
+<property id="Latitude" value="22.73335268"/></node>
+<node id="Veracruz">
+<property id="Longitude" value="-94.73999007"/>
+<property id="Latitude" value="17.93997601"/></node>
+<node id="Zacatecas">
+<property id="Longitude" value="-102.88001"/>
+<property id="Latitude" value="22.35001691"/></node>
+<node id="Baja California Sur">
+<property id="Longitude" value="-111.3516635"/>
+<property id="Latitude" value="26.01333335"/></node>
+<node id="Chihuahua">
+<property id="Longitude" value="-105.6666358"/>
+<property id="Latitude" value="26.93335472"/></node>
+<node id="Colima">
+<property id="Longitude" value="-103.8799748"/>
+<property id="Latitude" value="18.92038129"/></node>
+<node id="Hidalgo">
+<property id="Longitude" value="-98.73003076"/>
+<property id="Latitude" value="20.17043418"/></node>
+<node id="San Luis Potosi">
+<property id="Longitude" value="-99.66999923"/>
+<property id="Latitude" value="22.00001243"/></node>
+<node id="Tlaxcala">
+<property id="Longitude" value="-98.2300096"/>
+<property id="Latitude" value="19.31999514"/></node>
+</nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Nayarit" target="Nayarit" value="5.415"/>
+<link source="Yucatan" target="Tabasco" value="1.895"/>
+<link source="Yucatan" target="Quintana Roo" value="1.7642857"/>
+<link source="Yucatan" target="Yucatan" value="3.294375"/>
+<link source="Quintana Roo" target="Quintana Roo" value="1.43"/>
+<link source="Distrito Federal" target="Oaxaca" value="8.019412"/>
+<link source="Distrito Federal" target="Tabasco" value="9.492455"/>
+<link source="Distrito Federal" target="Campeche" value="12.19804"/>
+<link source="Distrito Federal" target="Guerrero" value="7.042093"/>
+<link source="Distrito Federal" target="Quintana Roo" value="7.229375"/>
+<link source="Distrito Federal" target="Yucatan" value="12.595217"/>
+<link source="Tabasco" target="Tabasco" value="1.7361538"/>
+<link source="Michoacan" target="Nuevo Leon" value="6.6098113"/>
+<link source="Michoacan" target="Morelos" value="5.9992595"/>
+<link source="Michoacan" target="Veracruz" value="6.8202796"/>
+<link source="Michoacan" target="Aguascalientes" value="5.9884906"/>
+<link source="Michoacan" target="Guerrero" value="7.652"/>
+<link source="Michoacan" target="Nayarit" value="7.0970454"/>
+<link source="Michoacan" target="Sonora" value="7.7765837"/>
+<link source="Michoacan" target="Mexico" value="5.962804"/>
+<link source="Michoacan" target="Chiapas" value="6.0509434"/>
+<link source="Michoacan" target="Distrito Federal" value="5.7956605"/>
+<link source="Michoacan" target="Tamaulipas" value="6.7428846"/>
+<link source="Michoacan" target="Baja California" value="5.56"/>
+<link source="Michoacan" target="Queretaro" value="6.695"/>
+<link source="Michoacan" target="Puebla" value="6.111887"/>
+<link source="Michoacan" target="Guanajuato" value="5.667547"/>
+<link source="Michoacan" target="Zacatecas" value="5.9625926"/>
+<link source="Michoacan" target="Coahuila" value="6.374074"/>
+<link source="Michoacan" target="Jalisco" value="6.626132"/>
+<link source="Michoacan" target="Michoacan" value="6.0343394"/>
+<link source="Michoacan" target="Durango" value="6.6092453"/>
+<link source="Jalisco" target="Baja California" value="7.7707143"/>
+<link source="Jalisco" target="Sinaloa" value="6.825926"/>
+<link source="Campeche" target="Campeche" value="3.736818"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="1999/01/01 00:00:00" date="19990101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Campeche"/>
+<node id="Sinaloa"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Campeche"/>
+<node id="Oaxaca"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/>
+<node id="Baja California"/>
+<node id="Colima"/>
+<node id="Sinaloa"/>
+<node id="Aguascalientes"/>
+<node id="Chiapas"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Nayarit"/>
+<node id="Nuevo Leon"/>
+<node id="Puebla"/>
+<node id="Queretaro"/>
+<node id="Sonora"/>
+<node id="Tamaulipas"/>
+<node id="Veracruz"/>
+<node id="Zacatecas"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Michoacan" target="Coahuila" value="13.932693"/>
+<link source="Michoacan" target="Nuevo Leon" value="17.019524"/>
+<link source="Michoacan" target="Veracruz" value="13.339658"/>
+<link source="Michoacan" target="Distrito Federal" value="12.795384"/>
+<link source="Michoacan" target="Chiapas" value="15.086154"/>
+<link source="Michoacan" target="Sonora" value="16.133398"/>
+<link source="Michoacan" target="Aguascalientes" value="13.334176"/>
+<link source="Michoacan" target="Guanajuato" value="13.376442"/>
+<link source="Michoacan" target="Queretaro" value="14.360385"/>
+<link source="Michoacan" target="Zacatecas" value="15.5656"/>
+<link source="Michoacan" target="Michoacan" value="12.854038"/>
+<link source="Michoacan" target="Durango" value="14.508491"/>
+<link source="Michoacan" target="Mexico" value="13.919327"/>
+<link source="Michoacan" target="Jalisco" value="14.404135"/>
+<link source="Michoacan" target="Puebla" value="13.686038"/>
+<link source="Michoacan" target="Guerrero" value="13.914259"/>
+<link source="Michoacan" target="Morelos" value="14.617647"/>
+<link source="Michoacan" target="Tamaulipas" value="13.4298115"/>
+<link source="Michoacan" target="Nayarit" value="15.491273"/>
+<link source="Yucatan" target="Quintana Roo" value="3.35"/>
+<link source="Yucatan" target="Yucatan" value="4.1965623"/>
+<link source="Yucatan" target="Campeche" value="3.7071428"/>
+<link source="Jalisco" target="Colima" value="25.385"/>
+<link source="Jalisco" target="Baja California" value="16.144262"/>
+<link source="Jalisco" target="Sinaloa" value="17.901539"/>
+<link source="Campeche" target="Campeche" value="3.19"/>
+<link source="Sinaloa" target="Yucatan" value="4.25"/>
+<link source="Distrito Federal" target="Quintana Roo" value="12.44718"/>
+<link source="Distrito Federal" target="Yucatan" value="21.836517"/>
+<link source="Distrito Federal" target="Oaxaca" value="15.562449"/>
+<link source="Distrito Federal" target="Campeche" value="21.455765"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2000/01/01 00:00:00" date="20000101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Nayarit"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Campeche"/>
+<node id="Oaxaca"/>
+<node id="Baja California"/>
+<node id="Aguascalientes"/>
+<node id="Chiapas"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Nayarit"/>
+<node id="Nuevo Leon"/>
+<node id="Yucatan"/>
+<node id="Quintana Roo"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Michoacan" target="Michoacan" value="6.199177"/>
+<link source="Michoacan" target="Aguascalientes" value="7.1118646"/>
+<link source="Michoacan" target="Jalisco" value="8.016837"/>
+<link source="Michoacan" target="Durango" value="8.799747"/>
+<link source="Michoacan" target="Mexico" value="7.7242126"/>
+<link source="Michoacan" target="Nayarit" value="8.39244"/>
+<link source="Michoacan" target="Chiapas" value="7.55"/>
+<link source="Michoacan" target="Guanajuato" value="6.251004"/>
+<link source="Michoacan" target="Distrito Federal" value="6.42644"/>
+<link source="Michoacan" target="Guerrero" value="8.3714285"/>
+<link source="Michoacan" target="Coahuila" value="7.7120333"/>
+<link source="Michoacan" target="Nuevo Leon" value="7.9878545"/>
+<link source="Michoacan" target="Morelos" value="8.5369625"/>
+<link source="Nayarit" target="Nayarit" value="5.0068493"/>
+<link source="Yucatan" target="Quintana Roo" value="2.1273494"/>
+<link source="Yucatan" target="Yucatan" value="2.977317"/>
+<link source="Jalisco" target="Baja California" value="9.403159"/>
+<link source="Distrito Federal" target="Yucatan" value="4.638793"/>
+<link source="Distrito Federal" target="Oaxaca" value="6.9309525"/>
+<link source="Distrito Federal" target="Campeche" value="17.344112"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2001/01/01 00:00:00" date="20010101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Nayarit"/>
+<node id="Campeche"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Campeche"/>
+<node id="Oaxaca"/>
+<node id="Baja California"/>
+<node id="Aguascalientes"/>
+<node id="Chiapas"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Nayarit"/>
+<node id="Nuevo Leon"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Campeche" target="Campeche" value="5.0"/>
+<link source="Distrito Federal" target="Campeche" value="23.474241"/>
+<link source="Distrito Federal" target="Quintana Roo" value="15.57"/>
+<link source="Distrito Federal" target="Oaxaca" value="11.251031"/>
+<link source="Distrito Federal" target="Yucatan" value="4.579167"/>
+<link source="Nayarit" target="Nayarit" value="5.7429905"/>
+<link source="Yucatan" target="Quintana Roo" value="3.7165"/>
+<link source="Yucatan" target="Yucatan" value="4.7538195"/>
+<link source="Michoacan" target="Coahuila" value="11.259921"/>
+<link source="Michoacan" target="Chiapas" value="10.704879"/>
+<link source="Michoacan" target="Guanajuato" value="10.026839"/>
+<link source="Michoacan" target="Morelos" value="11.662846"/>
+<link source="Michoacan" target="Nayarit" value="12.87349"/>
+<link source="Michoacan" target="Mexico" value="11.218191"/>
+<link source="Michoacan" target="Aguascalientes" value="11.444445"/>
+<link source="Michoacan" target="Nuevo Leon" value="12.548584"/>
+<link source="Michoacan" target="Distrito Federal" value="9.891912"/>
+<link source="Michoacan" target="Guerrero" value="14.60917"/>
+<link source="Michoacan" target="Michoacan" value="10.449596"/>
+<link source="Michoacan" target="Jalisco" value="11.379691"/>
+<link source="Michoacan" target="Durango" value="12.2229395"/>
+<link source="Jalisco" target="Baja California" value="12.998983"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2002/01/01 00:00:00" date="20020101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Nayarit"/>
+<node id="Puebla"/>
+<node id="Campeche"/>
+<node id="Chiapas"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Campeche"/>
+<node id="Chiapas"/>
+<node id="Baja California"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Nayarit"/>
+<node id="Nuevo Leon"/>
+<node id="Yucatan"/>
+<node id="Quintana Roo"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Chiapas" target="Yucatan" value="5.0"/>
+<link source="Distrito Federal" target="Campeche" value="15.051707"/>
+<link source="Distrito Federal" target="Quintana Roo" value="8.57"/>
+<link source="Distrito Federal" target="Yucatan" value="5.537838"/>
+<link source="Distrito Federal" target="Chiapas" value="8.605"/>
+<link source="Puebla" target="Chiapas" value="10.4366665"/>
+<link source="Campeche" target="Campeche" value="3.1666667"/>
+<link source="Jalisco" target="Baja California" value="12.472379"/>
+<link source="Yucatan" target="Quintana Roo" value="2.9281428"/>
+<link source="Yucatan" target="Yucatan" value="4.876022"/>
+<link source="Michoacan" target="Nayarit" value="10.096496"/>
+<link source="Michoacan" target="Guanajuato" value="8.4744425"/>
+<link source="Michoacan" target="Nuevo Leon" value="10.199308"/>
+<link source="Michoacan" target="Mexico" value="9.53852"/>
+<link source="Michoacan" target="Guerrero" value="11.287607"/>
+<link source="Michoacan" target="Durango" value="10.284682"/>
+<link source="Michoacan" target="Jalisco" value="9.744558"/>
+<link source="Michoacan" target="Hidalgo" value="9.089167"/>
+<link source="Michoacan" target="Baja California" value="11.939712"/>
+<link source="Michoacan" target="Distrito Federal" value="7.9699206"/>
+<link source="Michoacan" target="Aguascalientes" value="9.517858"/>
+<link source="Michoacan" target="Chiapas" value="8.577991"/>
+<link source="Michoacan" target="Michoacan" value="8.505158"/>
+<link source="Michoacan" target="Coahuila" value="10.1749"/>
+<link source="Michoacan" target="Morelos" value="10.793937"/>
+<link source="Nayarit" target="Nayarit" value="5.1293707"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2003/01/01 00:00:00" date="20030101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Nayarit"/>
+<node id="Puebla"/>
+<node id="Chiapas"/>
+<node id="Oaxaca"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Campeche"/>
+<node id="Baja California"/>
+<node id="Chihuahua"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Nayarit"/>
+<node id="Chiapas"/>
+<node id="Yucatan"/>
+<node id="Sonora"/>
+<node id="Quintana Roo"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Chiapas" target="Yucatan" value="5.875"/>
+<link source="Distrito Federal" target="Yucatan" value="5.9863014"/>
+<link source="Distrito Federal" target="Campeche" value="18.125488"/>
+<link source="Jalisco" target="Baja California" value="13.496359"/>
+<link source="Jalisco" target="Chihuahua" value="15.312963"/>
+<link source="Oaxaca" target="Yucatan" value="8.0"/>
+<link source="Nayarit" target="Yucatan" value="5.4583335"/>
+<link source="Nayarit" target="Nayarit" value="6.2465754"/>
+<link source="Michoacan" target="Guanajuato" value="11.182689"/>
+<link source="Michoacan" target="Hidalgo" value="10.636412"/>
+<link source="Michoacan" target="Morelos" value="11.544534"/>
+<link source="Michoacan" target="Sonora" value="10.5"/>
+<link source="Michoacan" target="Coahuila" value="11.109677"/>
+<link source="Michoacan" target="Jalisco" value="11.970632"/>
+<link source="Michoacan" target="Baja California" value="11.174034"/>
+<link source="Michoacan" target="Michoacan" value="11.980444"/>
+<link source="Michoacan" target="Chihuahua" value="15.365864"/>
+<link source="Michoacan" target="Aguascalientes" value="12.706522"/>
+<link source="Michoacan" target="Mexico" value="13.14024"/>
+<link source="Michoacan" target="Durango" value="12.290928"/>
+<link source="Michoacan" target="Nayarit" value="10.072973"/>
+<link source="Michoacan" target="Distrito Federal" value="10.66612"/>
+<link source="Michoacan" target="Guerrero" value="13.163794"/>
+<link source="Puebla" target="Chiapas" value="13.589025"/>
+<link source="Yucatan" target="Yucatan" value="7.2740526"/>
+<link source="Yucatan" target="Quintana Roo" value="6.2066665"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2004/01/01 00:00:00" date="20040101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Puebla"/>
+<node id="Campeche"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Campeche"/>
+<node id="Chiapas"/>
+<node id="Baja California"/>
+<node id="Chihuahua"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Yucatan"/>
+<node id="Quintana Roo"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Jalisco" target="Chihuahua" value="15.0746"/>
+<link source="Jalisco" target="Baja California" value="12.605769"/>
+<link source="Distrito Federal" target="Chiapas" value="12.733334"/>
+<link source="Distrito Federal" target="Yucatan" value="6.7013273"/>
+<link source="Distrito Federal" target="Campeche" value="15.881394"/>
+<link source="Yucatan" target="Quintana Roo" value="3.885"/>
+<link source="Yucatan" target="Yucatan" value="4.734459"/>
+<link source="Puebla" target="Chiapas" value="13.568719"/>
+<link source="Campeche" target="Yucatan" value="4.6666665"/>
+<link source="Michoacan" target="Chiapas" value="13.8125"/>
+<link source="Michoacan" target="Coahuila" value="10.454941"/>
+<link source="Michoacan" target="Distrito Federal" value="10.413028"/>
+<link source="Michoacan" target="Guerrero" value="11.850393"/>
+<link source="Michoacan" target="Durango" value="11.380722"/>
+<link source="Michoacan" target="Jalisco" value="11.079175"/>
+<link source="Michoacan" target="Chihuahua" value="12.925297"/>
+<link source="Michoacan" target="Baja California" value="11.168673"/>
+<link source="Michoacan" target="Aguascalientes" value="11.96789"/>
+<link source="Michoacan" target="Guanajuato" value="10.649019"/>
+<link source="Michoacan" target="Mexico" value="12.3621025"/>
+<link source="Michoacan" target="Michoacan" value="10.0"/>
+<link source="Michoacan" target="Hidalgo" value="10.105612"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2005/01/01 00:00:00" date="20050101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Campeche"/>
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Nayarit"/>
+<node id="Puebla"/>
+<node id="Chiapas"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Campeche"/>
+<node id="Baja California"/>
+<node id="Chihuahua"/>
+<node id="Colima"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Chiapas"/>
+<node id="Yucatan"/>
+<node id="Quintana Roo"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Yucatan" target="Quintana Roo" value="6.8753333"/>
+<link source="Yucatan" target="Yucatan" value="6.6876855"/>
+<link source="Campeche" target="Campeche" value="5.33"/>
+<link source="Distrito Federal" target="Yucatan" value="7.313107"/>
+<link source="Distrito Federal" target="Campeche" value="149.9359"/>
+<link source="Michoacan" target="Durango" value="15.217402"/>
+<link source="Michoacan" target="Chihuahua" value="16.967255"/>
+<link source="Michoacan" target="Distrito Federal" value="14.349185"/>
+<link source="Michoacan" target="Mexico" value="16.980537"/>
+<link source="Michoacan" target="Guerrero" value="15.122"/>
+<link source="Michoacan" target="Guanajuato" value="14.456088"/>
+<link source="Michoacan" target="Baja California" value="15.783301"/>
+<link source="Michoacan" target="Jalisco" value="14.4507"/>
+<link source="Michoacan" target="Hidalgo" value="13.850284"/>
+<link source="Michoacan" target="Coahuila" value="13.644488"/>
+<link source="Michoacan" target="Aguascalientes" value="15.75"/>
+<link source="Nayarit" target="Baja California" value="12.29"/>
+<link source="Jalisco" target="Chihuahua" value="20.566402"/>
+<link source="Jalisco" target="Colima" value="21.088541"/>
+<link source="Jalisco" target="Baja California" value="16.271326"/>
+<link source="Chiapas" target="Yucatan" value="7.7916665"/>
+<link source="Puebla" target="Quintana Roo" value="6.2492857"/>
+<link source="Puebla" target="Chiapas" value="16.41896"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2006/01/01 00:00:00" date="20060101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Michoacan"/>
+<node id="Aguascalientes"/>
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Puebla"/>
+<node id="Campeche"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Chihuahua"/>
+<node id="Nuevo Leon"/>
+<node id="Guanajuato"/>
+<node id="Campeche"/>
+<node id="Chiapas"/>
+<node id="Baja California"/>
+<node id="Colima"/>
+<node id="Michoacan"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Morelos"/>
+<node id="Tabasco"/>
+<node id="Yucatan"/>
+<node id="Zacatecas"/>
+<node id="Quintana Roo"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Michoacan" target="Aguascalientes" value="15.0625"/>
+<link source="Michoacan" target="Jalisco" value="15.540795"/>
+<link source="Michoacan" target="Distrito Federal" value="14.24626"/>
+<link source="Michoacan" target="Nuevo Leon" value="18.411764"/>
+<link source="Michoacan" target="Hidalgo" value="13.861037"/>
+<link source="Michoacan" target="Morelos" value="12.7875"/>
+<link source="Michoacan" target="Chihuahua" value="32.060356"/>
+<link source="Michoacan" target="Guanajuato" value="14.399895"/>
+<link source="Michoacan" target="Mexico" value="17.371984"/>
+<link source="Michoacan" target="Durango" value="16.898592"/>
+<link source="Michoacan" target="Guerrero" value="14.69838"/>
+<link source="Michoacan" target="Baja California" value="17.226158"/>
+<link source="Michoacan" target="Coahuila" value="16.688637"/>
+<link source="Michoacan" target="Michoacan" value="14.336478"/>
+<link source="Jalisco" target="Chihuahua" value="18.137707"/>
+<link source="Jalisco" target="Colima" value="17.919546"/>
+<link source="Jalisco" target="Zacatecas" value="17.14"/>
+<link source="Jalisco" target="Baja California" value="15.972892"/>
+<link source="Yucatan" target="Yucatan" value="5.0024066"/>
+<link source="Yucatan" target="Quintana Roo" value="3.888"/>
+<link source="Campeche" target="Tabasco" value="4.8"/>
+<link source="Distrito Federal" target="Yucatan" value="7.6077585"/>
+<link source="Distrito Federal" target="Chiapas" value="23.086666"/>
+<link source="Distrito Federal" target="Campeche" value="167.06778"/>
+<link source="Mexico" target="Michoacan" value="15.0"/>
+<link source="Puebla" target="Quintana Roo" value="7.8401175"/>
+<link source="Puebla" target="Chiapas" value="15.898149"/>
+<link source="Aguascalientes" target="Guanajuato" value="16.0"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2007/01/01 00:00:00" date="20070101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Nayarit"/>
+<node id="Puebla"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Yucatan"/>
+<node id="Chihuahua"/>
+<node id="Michoacan"/>
+<node id="Nuevo Leon"/>
+<node id="Campeche"/>
+<node id="Chiapas"/>
+<node id="Guerrero"/>
+<node id="Baja California"/>
+<node id="Colima"/>
+<node id="Nayarit"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Morelos"/>
+<node id="Quintana Roo"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Distrito Federal" target="Guerrero" value="18.214285"/>
+<link source="Distrito Federal" target="Chiapas" value="19.181416"/>
+<link source="Distrito Federal" target="Yucatan" value="35.046684"/>
+<link source="Distrito Federal" target="Campeche" value="36.71496"/>
+<link source="Puebla" target="Quintana Roo" value="9.867533"/>
+<link source="Puebla" target="Chiapas" value="20.0"/>
+<link source="Michoacan" target="Baja California" value="20.37631"/>
+<link source="Michoacan" target="Yucatan" value="28.0"/>
+<link source="Michoacan" target="Aguascalientes" value="18.576595"/>
+<link source="Michoacan" target="Michoacan" value="42.360252"/>
+<link source="Michoacan" target="Durango" value="19.624613"/>
+<link source="Michoacan" target="Morelos" value="21.09465"/>
+<link source="Michoacan" target="Guerrero" value="17.195946"/>
+<link source="Michoacan" target="Chihuahua" value="19.279139"/>
+<link source="Michoacan" target="Guanajuato" value="16.814833"/>
+<link source="Michoacan" target="Jalisco" value="18.153263"/>
+<link source="Michoacan" target="Distrito Federal" value="16.663568"/>
+<link source="Michoacan" target="Mexico" value="20.743788"/>
+<link source="Michoacan" target="Nayarit" value="26.147058"/>
+<link source="Michoacan" target="Nuevo Leon" value="21.329098"/>
+<link source="Michoacan" target="Coahuila" value="20.241726"/>
+<link source="Michoacan" target="Hidalgo" value="16.710705"/>
+<link source="Jalisco" target="Colima" value="23.0"/>
+<link source="Jalisco" target="Baja California" value="20.601883"/>
+<link source="Jalisco" target="Chihuahua" value="41.45257"/>
+<link source="Jalisco" target="Nayarit" value="22.257408"/>
+<link source="Nayarit" target="Baja California" value="16.0"/>
+<link source="Nayarit" target="Nayarit" value="11.409091"/>
+<link source="Yucatan" target="Yucatan" value="6.263754"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2008/01/01 00:00:00" date="20080101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Aguascalientes"/>
+<node id="Campeche"/>
+<node id="Colima"/>
+<node id="Puebla"/>
+<node id="Chiapas"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Quintana Roo"/>
+<node id="Chihuahua"/>
+<node id="Coahuila"/>
+<node id="Nuevo Leon"/>
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Colima"/>
+<node id="Campeche"/>
+<node id="Chiapas"/>
+<node id="Guerrero"/>
+<node id="Baja California"/>
+<node id="Aguascalientes"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Hidalgo"/>
+<node id="Mexico"/>
+<node id="Morelos"/>
+<node id="Yucatan"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Colima" target="Colima" value="23.0"/>
+<link source="Distrito Federal" target="Chiapas" value="18.0"/>
+<link source="Distrito Federal" target="Campeche" value="42.205147"/>
+<link source="Distrito Federal" target="Guerrero" value="18.4"/>
+<link source="Distrito Federal" target="Yucatan" value="10.419811"/>
+<link source="Distrito Federal" target="Quintana Roo" value="34.227345"/>
+<link source="Quintana Roo" target="Quintana Roo" value="9.371765"/>
+<link source="Aguascalientes" target="Jalisco" value="45.5"/>
+<link source="Campeche" target="Michoacan" value="26.0"/>
+<link source="Yucatan" target="Yucatan" value="7.7060184"/>
+<link source="Jalisco" target="Chihuahua" value="42.24168"/>
+<link source="Jalisco" target="Colima" value="30.184048"/>
+<link source="Jalisco" target="Baja California" value="23.057554"/>
+<link source="Puebla" target="Chiapas" value="19.191402"/>
+<link source="Puebla" target="Quintana Roo" value="12.086268"/>
+<link source="Chiapas" target="Yucatan" value="13.5"/>
+<link source="Michoacan" target="Chihuahua" value="22.080769"/>
+<link source="Michoacan" target="Michoacan" value="21.373827"/>
+<link source="Michoacan" target="Aguascalientes" value="22.638248"/>
+<link source="Michoacan" target="Jalisco" value="21.80054"/>
+<link source="Michoacan" target="Distrito Federal" value="21.491"/>
+<link source="Michoacan" target="Guerrero" value="22.097088"/>
+<link source="Michoacan" target="Coahuila" value="50.378914"/>
+<link source="Michoacan" target="Durango" value="22.077837"/>
+<link source="Michoacan" target="Hidalgo" value="18.167465"/>
+<link source="Michoacan" target="Mexico" value="22.082272"/>
+<link source="Michoacan" target="Baja California" value="24.495596"/>
+<link source="Michoacan" target="Guanajuato" value="22.761871"/>
+<link source="Michoacan" target="Nuevo Leon" value="23.732794"/>
+<link source="Michoacan" target="Morelos" value="27.687147"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2009/01/01 00:00:00" date="20090101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Distrito Federal"/>
+<node id="Michoacan"/>
+<node id="Colima"/>
+<node id="Jalisco"/>
+<node id="Nayarit"/>
+<node id="Puebla"/>
+<node id="Chiapas"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Quintana Roo"/>
+<node id="Chihuahua"/>
+<node id="Guerrero"/>
+<node id="Nuevo Leon"/>
+<node id="San Luis Potosi"/>
+<node id="Colima"/>
+<node id="Campeche"/>
+<node id="Baja California"/>
+<node id="Nayarit"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Chiapas"/>
+<node id="Yucatan"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Michoacan" target="Michoacan" value="23.142536"/>
+<link source="Michoacan" target="Durango" value="24.717829"/>
+<link source="Michoacan" target="Morelos" value="26.034155"/>
+<link source="Michoacan" target="Hidalgo" value="19.319279"/>
+<link source="Michoacan" target="Mexico" value="26.072985"/>
+<link source="Michoacan" target="Coahuila" value="25.044218"/>
+<link source="Michoacan" target="Jalisco" value="21.578175"/>
+<link source="Michoacan" target="Aguascalientes" value="22.73348"/>
+<link source="Michoacan" target="Distrito Federal" value="21.277967"/>
+<link source="Michoacan" target="Nuevo Leon" value="49.671192"/>
+<link source="Michoacan" target="San Luis Potosi" value="30.596153"/>
+<link source="Michoacan" target="Guanajuato" value="23.536188"/>
+<link source="Michoacan" target="Guerrero" value="47.0053"/>
+<link source="Michoacan" target="Chihuahua" value="21.09194"/>
+<link source="Michoacan" target="Baja California" value="23.940311"/>
+<link source="Puebla" target="Quintana Roo" value="10.154347"/>
+<link source="Puebla" target="Chiapas" value="19.364769"/>
+<link source="Yucatan" target="Yucatan" value="6.6929135"/>
+<link source="Jalisco" target="Colima" value="30.141352"/>
+<link source="Jalisco" target="Nayarit" value="29.642544"/>
+<link source="Jalisco" target="Chihuahua" value="24.938604"/>
+<link source="Jalisco" target="Baja California" value="24.615404"/>
+<link source="Nayarit" target="Nayarit" value="14.695652"/>
+<link source="Distrito Federal" target="Yucatan" value="11.65"/>
+<link source="Distrito Federal" target="Quintana Roo" value="34.445145"/>
+<link source="Distrito Federal" target="Campeche" value="40.71476"/>
+<link source="Quintana Roo" target="Quintana Roo" value="6.248286"/>
+<link source="Colima" target="Colima" value="25.5"/>
+<link source="Chiapas" target="Yucatan" value="11.9827585"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2010/01/01 00:00:00" date="20100101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Distrito Federal"/>
+<node id="Importaci&#243;n"/>
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Chiapas"/>
+<node id="Colima"/>
+<node id="Durango"/>
+<node id="Mexico"/>
+<node id="Nayarit"/>
+<node id="Puebla"/>
+<node id="Sinaloa"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Oaxaca"/>
+<node id="Quintana Roo"/>
+<node id="Nuevo Leon"/>
+<node id="Chihuahua"/>
+<node id="Guanajuato"/>
+<node id="Chiapas"/>
+<node id="Colima"/>
+<node id="Campeche"/>
+<node id="Baja California"/>
+<node id="Nayarit"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Yucatan"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Michoacan" target="Durango" value="23.823324"/>
+<link source="Michoacan" target="Aguascalientes" value="22.534883"/>
+<link source="Michoacan" target="Hidalgo" value="19.838495"/>
+<link source="Michoacan" target="Guanajuato" value="47.797012"/>
+<link source="Michoacan" target="Chihuahua" value="24.81279"/>
+<link source="Michoacan" target="Jalisco" value="21.669767"/>
+<link source="Michoacan" target="Baja California" value="22.327742"/>
+<link source="Michoacan" target="Mexico" value="24.184706"/>
+<link source="Michoacan" target="Michoacan" value="21.194399"/>
+<link source="Michoacan" target="Morelos" value="26.446297"/>
+<link source="Michoacan" target="Coahuila" value="24.645264"/>
+<link source="Michoacan" target="Guerrero" value="24.464455"/>
+<link source="Michoacan" target="Nuevo Leon" value="45.273582"/>
+<link source="Michoacan" target="Distrito Federal" value="22.26369"/>
+<link source="Michoacan" target="Nayarit" value="30.058441"/>
+<link source="Mexico" target="Guanajuato" value="24.75"/>
+<link source="Quintana Roo" target="Quintana Roo" value="9.6892"/>
+<link source="Yucatan" target="Yucatan" value="7.2322764"/>
+<link source="Durango" target="Baja California" value="22.22"/>
+<link source="Puebla" target="Quintana Roo" value="10.925834"/>
+<link source="Puebla" target="Chiapas" value="24.387169"/>
+<link source="Colima" target="Colima" value="22.0"/>
+<link source="Importaci&#243;n" target="Nuevo Leon" value="28.0"/>
+<link source="Sinaloa" target="Durango" value="14.615385"/>
+<link source="Chiapas" target="Chiapas" value="18.0"/>
+<link source="Nayarit" target="Nayarit" value="15.522124"/>
+<link source="Distrito Federal" target="Yucatan" value="10.634147"/>
+<link source="Distrito Federal" target="Oaxaca" value="27.344667"/>
+<link source="Distrito Federal" target="Quintana Roo" value="44.498207"/>
+<link source="Distrito Federal" target="Campeche" value="40.72071"/>
+<link source="Jalisco" target="Colima" value="28.417582"/>
+<link source="Jalisco" target="Chihuahua" value="45.769035"/>
+<link source="Jalisco" target="Nayarit" value="24.448717"/>
+<link source="Jalisco" target="Baja California" value="26.499063"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2011/01/01 00:00:00" date="20110101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Mexico"/>
+<node id="Nayarit"/>
+<node id="Puebla"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Oaxaca"/>
+<node id="Quintana Roo"/>
+<node id="Chihuahua"/>
+<node id="Nuevo Leon"/>
+<node id="Campeche"/>
+<node id="Baja California"/>
+<node id="Colima"/>
+<node id="Guanajuato"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Nayarit"/>
+<node id="Puebla"/>
+<node id="Chiapas"/>
+<node id="Yucatan"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Jalisco" target="Baja California" value="36.399483"/>
+<link source="Jalisco" target="Chihuahua" value="51.407787"/>
+<link source="Jalisco" target="Colima" value="34.537636"/>
+<link source="Nayarit" target="Yucatan" value="9.434783"/>
+<link source="Nayarit" target="Baja California" value="23.011614"/>
+<link source="Yucatan" target="Yucatan" value="9.020175"/>
+<link source="Puebla" target="Quintana Roo" value="10.832738"/>
+<link source="Puebla" target="Chiapas" value="36.55727"/>
+<link source="Distrito Federal" target="Yucatan" value="12.873077"/>
+<link source="Distrito Federal" target="Oaxaca" value="72.897644"/>
+<link source="Distrito Federal" target="Quintana Roo" value="62.999763"/>
+<link source="Distrito Federal" target="Campeche" value="47.227894"/>
+<link source="Michoacan" target="Mexico" value="32.15851"/>
+<link source="Michoacan" target="Distrito Federal" value="28.520226"/>
+<link source="Michoacan" target="Guerrero" value="33.99115"/>
+<link source="Michoacan" target="Guanajuato" value="30.11111"/>
+<link source="Michoacan" target="Hidalgo" value="27.286367"/>
+<link source="Michoacan" target="Chihuahua" value="68.95378"/>
+<link source="Michoacan" target="Durango" value="35.24162"/>
+<link source="Michoacan" target="Nayarit" value="36.405243"/>
+<link source="Michoacan" target="Coahuila" value="33.876076"/>
+<link source="Michoacan" target="Baja California" value="35.738415"/>
+<link source="Michoacan" target="Michoacan" value="29.062393"/>
+<link source="Michoacan" target="Puebla" value="19.46258"/>
+<link source="Michoacan" target="Nuevo Leon" value="61.690163"/>
+<link source="Michoacan" target="Jalisco" value="28.779444"/>
+<link source="Michoacan" target="Aguascalientes" value="29.734913"/>
+<link source="Michoacan" target="Chiapas" value="20.0"/>
+<link source="Michoacan" target="Morelos" value="32.78547"/>
+<link source="Mexico" target="Guanajuato" value="20.0"/>
+<link source="Quintana Roo" target="Quintana Roo" value="8.644375"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2012/01/01 00:00:00" date="20120101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Jalisco"/>
+<node id="Michoacan"/>
+<node id="Aguascalientes"/>
+<node id="Distrito Federal"/>
+<node id="Nayarit"/>
+<node id="Puebla"/>
+<node id="Chiapas"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Baja California"/>
+<node id="Chihuahua"/>
+<node id="Nuevo Leon"/>
+<node id="Chiapas"/>
+<node id="Campeche"/>
+<node id="Colima"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Nayarit"/>
+<node id="Yucatan"/>
+<node id="Quintana Roo"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Aguascalientes" target="Chiapas" value="33.0"/>
+<link source="Distrito Federal" target="Quintana Roo" value="10.908931"/>
+<link source="Distrito Federal" target="Campeche" value="41.872257"/>
+<link source="Distrito Federal" target="Yucatan" value="10.635417"/>
+<link source="Puebla" target="Quintana Roo" value="11.721373"/>
+<link source="Puebla" target="Chiapas" value="29.72428"/>
+<link source="Yucatan" target="Yucatan" value="6.5728517"/>
+<link source="Nayarit" target="Baja California" value="28.080194"/>
+<link source="Nayarit" target="Yucatan" value="11.85"/>
+<link source="Jalisco" target="Chihuahua" value="53.00795"/>
+<link source="Jalisco" target="Colima" value="25.186869"/>
+<link source="Jalisco" target="Baja California" value="56.160606"/>
+<link source="Quintana Roo" target="Quintana Roo" value="8.248788"/>
+<link source="Michoacan" target="Chihuahua" value="38.46263"/>
+<link source="Michoacan" target="Nuevo Leon" value="22.767218"/>
+<link source="Michoacan" target="Distrito Federal" value="21.587791"/>
+<link source="Michoacan" target="Baja California" value="21.945465"/>
+<link source="Michoacan" target="Hidalgo" value="17.383884"/>
+<link source="Michoacan" target="Jalisco" value="22.304958"/>
+<link source="Michoacan" target="Morelos" value="23.017628"/>
+<link source="Michoacan" target="Coahuila" value="21.365477"/>
+<link source="Michoacan" target="Guanajuato" value="23.32133"/>
+<link source="Michoacan" target="Nayarit" value="24.09091"/>
+<link source="Michoacan" target="Durango" value="22.525673"/>
+<link source="Michoacan" target="Guerrero" value="23.5"/>
+<link source="Michoacan" target="Mexico" value="23.400818"/>
+<link source="Michoacan" target="Michoacan" value="20.64044"/>
+<link source="Michoacan" target="Aguascalientes" value="19.285124"/>
+<link source="Chiapas" target="Yucatan" value="13.8625"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2013/01/01 00:00:00" date="20130101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Distrito Federal"/>
+<node id="Michoacan"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Nayarit"/>
+<node id="Nuevo Leon"/>
+<node id="Puebla"/>
+<node id="Campeche"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Oaxaca"/>
+<node id="Chihuahua"/>
+<node id="Nuevo Leon"/>
+<node id="Campeche"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/>
+<node id="Baja California"/>
+<node id="Colima"/>
+<node id="Nayarit"/>
+<node id="Sinaloa"/>
+<node id="Zacatecas"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Puebla"/>
+<node id="Queretaro"/>
+<node id="San Luis Potosi"/>
+<node id="Sonora"/>
+<node id="Tabasco"/>
+<node id="Veracruz"/>
+<node id="Tamaulipas"/>
+<node id="Chiapas"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Nayarit" target="Sonora" value="14.051724"/>
+<link source="Yucatan" target="Yucatan" value="6.4242425"/>
+<link source="Michoacan" target="Chihuahua" value="48.511063"/>
+<link source="Michoacan" target="Jalisco" value="26.446873"/>
+<link source="Michoacan" target="Michoacan" value="20.99761"/>
+<link source="Michoacan" target="Tabasco" value="24.066"/>
+<link source="Michoacan" target="San Luis Potosi" value="18.326693"/>
+<link source="Michoacan" target="Morelos" value="23.558588"/>
+<link source="Michoacan" target="Durango" value="21.69342"/>
+<link source="Michoacan" target="Puebla" value="20.259682"/>
+<link source="Michoacan" target="Hidalgo" value="15.754104"/>
+<link source="Michoacan" target="Mexico" value="24.640438"/>
+<link source="Michoacan" target="Queretaro" value="23.317461"/>
+<link source="Michoacan" target="Distrito Federal" value="21.978447"/>
+<link source="Michoacan" target="Veracruz" value="22.912308"/>
+<link source="Michoacan" target="Coahuila" value="20.319355"/>
+<link source="Michoacan" target="Aguascalientes" value="19.906883"/>
+<link source="Michoacan" target="Nayarit" value="28.56318"/>
+<link source="Michoacan" target="Guerrero" value="25.389345"/>
+<link source="Michoacan" target="Guanajuato" value="23.196"/>
+<link source="Michoacan" target="Sonora" value="24.39521"/>
+<link source="Michoacan" target="Nuevo Leon" value="46.003082"/>
+<link source="Michoacan" target="Baja California" value="21.785141"/>
+<link source="Quintana Roo" target="Quintana Roo" value="7.079516"/>
+<link source="Distrito Federal" target="Quintana Roo" value="34.331757"/>
+<link source="Distrito Federal" target="Campeche" value="34.778973"/>
+<link source="Distrito Federal" target="Yucatan" value="39.96142"/>
+<link source="Distrito Federal" target="Oaxaca" value="49.489502"/>
+<link source="Puebla" target="Veracruz" value="26.661118"/>
+<link source="Puebla" target="Chiapas" value="27.742971"/>
+<link source="Puebla" target="Tamaulipas" value="24.065119"/>
+<link source="Puebla" target="Yucatan" value="10.166667"/>
+<link source="Campeche" target="Campeche" value="13.08"/>
+<link source="Mexico" target="Chihuahua" value="36.4"/>
+<link source="Jalisco" target="Chihuahua" value="29.641935"/>
+<link source="Jalisco" target="Sinaloa" value="27.454184"/>
+<link source="Jalisco" target="Colima" value="25.84"/>
+<link source="Jalisco" target="Zacatecas" value="17.92"/>
+<link source="Jalisco" target="Nayarit" value="17.142857"/>
+<link source="Jalisco" target="Baja California" value="42.692307"/>
+<link source="Nuevo Leon" target="Tamaulipas" value="24.238274"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2014/01/01 00:00:00" date="20140101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Michoacan"/>
+<node id="Aguascalientes"/>
+<node id="Campeche"/>
+<node id="Chiapas"/>
+<node id="Chihuahua"/>
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Nuevo Leon"/>
+<node id="Puebla"/>
+<node id="Sinaloa"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Nuevo Leon"/>
+<node id="Aguascalientes"/>
+<node id="Morelos"/>
+<node id="Campeche"/>
+<node id="Chiapas"/>
+<node id="Michoacan"/>
+<node id="Oaxaca"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/>
+<node id="Baja California"/>
+<node id="Colima"/>
+<node id="Nayarit"/>
+<node id="Sinaloa"/>
+<node id="Zacatecas"/>
+<node id="Chihuahua"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Puebla"/>
+<node id="Queretaro"/>
+<node id="San Luis Potosi"/>
+<node id="Sonora"/>
+<node id="Tabasco"/>
+<node id="Veracruz"/>
+<node id="Tamaulipas"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Campeche" target="Campeche" value="33.85"/>
+<link source="Chiapas" target="Chiapas" value="22.78125"/>
+<link source="Aguascalientes" target="Morelos" value="23.33"/>
+<link source="Aguascalientes" target="Aguascalientes" value="16.5"/>
+<link source="Yucatan" target="Yucatan" value="7.448297"/>
+<link source="Chihuahua" target="Michoacan" value="22.63"/>
+<link source="Jalisco" target="Sinaloa" value="31.21285"/>
+<link source="Jalisco" target="Baja California" value="31.237373"/>
+<link source="Jalisco" target="Colima" value="30.029411"/>
+<link source="Jalisco" target="Zacatecas" value="21.541832"/>
+<link source="Jalisco" target="Nayarit" value="20.0"/>
+<link source="Quintana Roo" target="Quintana Roo" value="11.2791395"/>
+<link source="Puebla" target="Veracruz" value="31.803724"/>
+<link source="Puebla" target="Tamaulipas" value="31.188208"/>
+<link source="Puebla" target="Quintana Roo" value="19.17"/>
+<link source="Puebla" target="Chiapas" value="27.848623"/>
+<link source="Sinaloa" target="Sinaloa" value="3.5"/>
+<link source="Michoacan" target="Guerrero" value="24.739044"/>
+<link source="Michoacan" target="Michoacan" value="24.003494"/>
+<link source="Michoacan" target="Hidalgo" value="20.365704"/>
+<link source="Michoacan" target="Baja California" value="25.421474"/>
+<link source="Michoacan" target="Puebla" value="24.285458"/>
+<link source="Michoacan" target="Guanajuato" value="25.845469"/>
+<link source="Michoacan" target="Coahuila" value="22.734262"/>
+<link source="Michoacan" target="Mexico" value="27.52291"/>
+<link source="Michoacan" target="Nuevo Leon" value="53.56466"/>
+<link source="Michoacan" target="Nayarit" value="29.299103"/>
+<link source="Michoacan" target="Morelos" value="26.949635"/>
+<link source="Michoacan" target="Durango" value="23.534893"/>
+<link source="Michoacan" target="Veracruz" value="24.47052"/>
+<link source="Michoacan" target="Sonora" value="28.399595"/>
+<link source="Michoacan" target="Chihuahua" value="25.96501"/>
+<link source="Michoacan" target="Aguascalientes" value="21.722221"/>
+<link source="Michoacan" target="San Luis Potosi" value="20.361"/>
+<link source="Michoacan" target="Queretaro" value="27.0"/>
+<link source="Michoacan" target="Distrito Federal" value="23.509481"/>
+<link source="Michoacan" target="Jalisco" value="28.159542"/>
+<link source="Michoacan" target="Tabasco" value="24.616"/>
+<link source="Distrito Federal" target="Yucatan" value="44.633396"/>
+<link source="Distrito Federal" target="Oaxaca" value="25.542255"/>
+<link source="Distrito Federal" target="Campeche" value="45.144753"/>
+<link source="Distrito Federal" target="Quintana Roo" value="48.975643"/>
+<link source="Nuevo Leon" target="Tamaulipas" value="29.083666"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2015/01/01 00:00:00" date="20150101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Michoacan"/>
+<node id="Chiapas"/>
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Nuevo Leon"/>
+<node id="Puebla"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Chihuahua"/>
+<node id="Nuevo Leon"/>
+<node id="Chiapas"/>
+<node id="Campeche"/>
+<node id="Oaxaca"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/>
+<node id="Baja California"/>
+<node id="Colima"/>
+<node id="Sinaloa"/>
+<node id="Zacatecas"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Nayarit"/>
+<node id="Puebla"/>
+<node id="Queretaro"/>
+<node id="San Luis Potosi"/>
+<node id="Sonora"/>
+<node id="Tabasco"/>
+<node id="Tamaulipas"/>
+<node id="Veracruz"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Yucatan" target="Yucatan" value="6.2027535"/>
+<link source="Michoacan" target="Queretaro" value="24.358871"/>
+<link source="Michoacan" target="Durango" value="21.69917"/>
+<link source="Michoacan" target="Michoacan" value="20.87253"/>
+<link source="Michoacan" target="Tabasco" value="22.714285"/>
+<link source="Michoacan" target="Sonora" value="26.279686"/>
+<link source="Michoacan" target="Nuevo Leon" value="48.75525"/>
+<link source="Michoacan" target="Mexico" value="25.361168"/>
+<link source="Michoacan" target="Distrito Federal" value="20.504"/>
+<link source="Michoacan" target="San Luis Potosi" value="18.873493"/>
+<link source="Michoacan" target="Aguascalientes" value="21.241735"/>
+<link source="Michoacan" target="Morelos" value="24.694504"/>
+<link source="Michoacan" target="Guanajuato" value="24.157747"/>
+<link source="Michoacan" target="Coahuila" value="19.947773"/>
+<link source="Michoacan" target="Hidalgo" value="23.02431"/>
+<link source="Michoacan" target="Jalisco" value="26.335968"/>
+<link source="Michoacan" target="Tamaulipas" value="31.460526"/>
+<link source="Michoacan" target="Chihuahua" value="46.50885"/>
+<link source="Michoacan" target="Veracruz" value="22.21332"/>
+<link source="Michoacan" target="Puebla" value="21.36747"/>
+<link source="Michoacan" target="Nayarit" value="25.37054"/>
+<link source="Michoacan" target="Baja California" value="18.78211"/>
+<link source="Michoacan" target="Guerrero" value="24.821285"/>
+<link source="Puebla" target="Chiapas" value="24.568377"/>
+<link source="Puebla" target="Tamaulipas" value="29.445435"/>
+<link source="Puebla" target="Veracruz" value="29.416037"/>
+<link source="Quintana Roo" target="Quintana Roo" value="11.561153"/>
+<link source="Chiapas" target="Chiapas" value="20.75"/>
+<link source="Nuevo Leon" target="Tamaulipas" value="27.16466"/>
+<link source="Jalisco" target="Colima" value="28.712872"/>
+<link source="Jalisco" target="Zacatecas" value="19.878542"/>
+<link source="Jalisco" target="Baja California" value="27.05"/>
+<link source="Jalisco" target="Sinaloa" value="30.384"/>
+<link source="Distrito Federal" target="Campeche" value="41.364044"/>
+<link source="Distrito Federal" target="Yucatan" value="41.19387"/>
+<link source="Distrito Federal" target="Quintana Roo" value="42.91846"/>
+<link source="Distrito Federal" target="Oaxaca" value="22.2123"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2016/01/01 00:00:00" date="20160101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Michoacan"/>
+<node id="Aguascalientes"/>
+<node id="Chiapas"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Jalisco"/>
+<node id="Nayarit"/>
+<node id="Nuevo Leon"/>
+<node id="Puebla"/>
+<node id="Sinaloa"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Chihuahua"/>
+<node id="Nuevo Leon"/>
+<node id="Sonora"/>
+<node id="Nayarit"/>
+<node id="Durango"/>
+<node id="Campeche"/>
+<node id="Oaxaca"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/>
+<node id="Puebla"/>
+<node id="Aguascalientes"/>
+<node id="Baja California"/>
+<node id="Colima"/>
+<node id="Sinaloa"/>
+<node id="Zacatecas"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Jalisco"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Queretaro"/>
+<node id="San Luis Potosi"/>
+<node id="Tabasco"/>
+<node id="Tamaulipas"/>
+<node id="Veracruz"/>
+<node id="Chiapas"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Distrito Federal" target="Quintana Roo" value="58.903076"/>
+<link source="Distrito Federal" target="Yucatan" value="52.408222"/>
+<link source="Distrito Federal" target="Oaxaca" value="30.2412"/>
+<link source="Distrito Federal" target="Campeche" value="50.2931"/>
+<link source="Aguascalientes" target="Nayarit" value="32.5"/>
+<link source="Yucatan" target="Yucatan" value="11.296476"/>
+<link source="Quintana Roo" target="Quintana Roo" value="14.576696"/>
+<link source="Jalisco" target="Colima" value="39.554455"/>
+<link source="Jalisco" target="Zacatecas" value="24.413654"/>
+<link source="Jalisco" target="Sinaloa" value="36.376984"/>
+<link source="Jalisco" target="Aguascalientes" value="16.0"/>
+<link source="Jalisco" target="Baja California" value="35.45418"/>
+<link source="Nuevo Leon" target="Tamaulipas" value="36.18254"/>
+<link source="Durango" target="Durango" value="29.615385"/>
+<link source="Chiapas" target="Yucatan" value="21.0"/>
+<link source="Chiapas" target="Durango" value="52.0"/>
+<link source="Nayarit" target="Chihuahua" value="30.0"/>
+<link source="Guanajuato" target="Puebla" value="17.78"/>
+<link source="Sinaloa" target="Yucatan" value="14.857142"/>
+<link source="Sinaloa" target="Puebla" value="33.39355"/>
+<link source="Michoacan" target="Nuevo Leon" value="71.78786"/>
+<link source="Michoacan" target="Tabasco" value="29.74008"/>
+<link source="Michoacan" target="Guerrero" value="23.811155"/>
+<link source="Michoacan" target="San Luis Potosi" value="26.376984"/>
+<link source="Michoacan" target="Oaxaca" value="22.67"/>
+<link source="Michoacan" target="Veracruz" value="31.333254"/>
+<link source="Michoacan" target="Morelos" value="30.01594"/>
+<link source="Michoacan" target="Tamaulipas" value="36.356785"/>
+<link source="Michoacan" target="Aguascalientes" value="27.87347"/>
+<link source="Michoacan" target="Guanajuato" value="28.799728"/>
+<link source="Michoacan" target="Jalisco" value="34.02048"/>
+<link source="Michoacan" target="Puebla" value="17.38875"/>
+<link source="Michoacan" target="Durango" value="28.869606"/>
+<link source="Michoacan" target="Hidalgo" value="28.283005"/>
+<link source="Michoacan" target="Mexico" value="32.37004"/>
+<link source="Michoacan" target="Chihuahua" value="61.644165"/>
+<link source="Michoacan" target="Coahuila" value="26.76627"/>
+<link source="Michoacan" target="Michoacan" value="28.494326"/>
+<link source="Michoacan" target="Sonora" value="68.69856"/>
+<link source="Michoacan" target="Distrito Federal" value="27.761906"/>
+<link source="Michoacan" target="Queretaro" value="32.015873"/>
+<link source="Michoacan" target="Nayarit" value="38.444542"/>
+<link source="Michoacan" target="Baja California" value="29.75"/>
+<link source="Puebla" target="Chiapas" value="26.738094"/>
+<link source="Puebla" target="Veracruz" value="36.7649"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2017/01/01 00:00:00" date="20170101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Michoacan"/>
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Nayarit"/>
+<node id="Nuevo Leon"/>
+<node id="Puebla"/>
+<node id="Sinaloa"/>
+<node id="Veracruz"/>
+<node id="Chiapas"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Chihuahua"/>
+<node id="Nuevo Leon"/>
+<node id="Sonora"/>
+<node id="Campeche"/>
+<node id="Oaxaca"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/>
+<node id="Baja California"/>
+<node id="Colima"/>
+<node id="Jalisco"/>
+<node id="Sinaloa"/>
+<node id="Zacatecas"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Nayarit"/>
+<node id="Queretaro"/>
+<node id="San Luis Potosi"/>
+<node id="Tabasco"/>
+<node id="Tamaulipas"/>
+<node id="Veracruz"/>
+<node id="Chiapas"/>
+<node id="Puebla"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Nuevo Leon" target="Tamaulipas" value="52.92032"/>
+<link source="Chiapas" target="Yucatan" value="20.454546"/>
+<link source="Sinaloa" target="Puebla" value="48.36132"/>
+<link source="Michoacan" target="Chihuahua" value="95.11154"/>
+<link source="Michoacan" target="Jalisco" value="48.430916"/>
+<link source="Michoacan" target="Yucatan" value="46.404827"/>
+<link source="Michoacan" target="Michoacan" value="41.040997"/>
+<link source="Michoacan" target="Morelos" value="46.066227"/>
+<link source="Michoacan" target="Sonora" value="80.85264"/>
+<link source="Michoacan" target="Aguascalientes" value="41.124504"/>
+<link source="Michoacan" target="San Luis Potosi" value="37.95418"/>
+<link source="Michoacan" target="Hidalgo" value="27.77692"/>
+<link source="Michoacan" target="Guerrero" value="47.57968"/>
+<link source="Michoacan" target="Tabasco" value="40.836655"/>
+<link source="Michoacan" target="Baja California" value="51.50199"/>
+<link source="Michoacan" target="Durango" value="43.453785"/>
+<link source="Michoacan" target="Mexico" value="47.188248"/>
+<link source="Michoacan" target="Nayarit" value="33.387054"/>
+<link source="Michoacan" target="Distrito Federal" value="40.88295"/>
+<link source="Michoacan" target="Queretaro" value="46.144"/>
+<link source="Michoacan" target="Guanajuato" value="37.120155"/>
+<link source="Michoacan" target="Veracruz" value="45.364178"/>
+<link source="Michoacan" target="Tamaulipas" value="40.0"/>
+<link source="Michoacan" target="Nuevo Leon" value="101.60774"/>
+<link source="Michoacan" target="Coahuila" value="42.1"/>
+<link source="Quintana Roo" target="Quintana Roo" value="20.015715"/>
+<link source="Distrito Federal" target="Yucatan" value="67.4277"/>
+<link source="Distrito Federal" target="Campeche" value="58.30976"/>
+<link source="Distrito Federal" target="Quintana Roo" value="73.82253"/>
+<link source="Distrito Federal" target="Oaxaca" value="43.185783"/>
+<link source="Yucatan" target="Yucatan" value="12.234305"/>
+<link source="Nayarit" target="Yucatan" value="15.0"/>
+<link source="Nayarit" target="Durango" value="26.405405"/>
+<link source="Jalisco" target="Chihuahua" value="39.9"/>
+<link source="Jalisco" target="Jalisco" value="33.32734"/>
+<link source="Jalisco" target="Colima" value="55.184467"/>
+<link source="Jalisco" target="Zacatecas" value="36.15538"/>
+<link source="Jalisco" target="Sinaloa" value="50.796814"/>
+<link source="Jalisco" target="Baja California" value="55.412"/>
+<link source="Veracruz" target="Chihuahua" value="32.9"/>
+<link source="Puebla" target="Chiapas" value="40.468"/>
+<link source="Puebla" target="Veracruz" value="53.49445"/></network>
+</networks>
+</MetaNetwork>
+<MetaNetwork id="2018/01/01 00:00:00" date="20180101T00:00:00">
+<nodes>
+<nodeclass type="Agent" id="O_market">
+<node id="Chihuahua"/>
+<node id="Michoacan"/>
+<node id="Aguascalientes"/>
+<node id="Distrito Federal"/>
+<node id="Jalisco"/>
+<node id="Nuevo Leon"/>
+<node id="Puebla"/>
+<node id="Quintana Roo"/>
+<node id="Sinaloa"/>
+<node id="Chiapas"/>
+<node id="Nayarit"/>
+<node id="Yucatan"/></nodeclass>
+<nodeclass type="Agent" id="D_market">
+<node id="Chihuahua"/>
+<node id="Nuevo Leon"/>
+<node id="Nayarit"/>
+<node id="Puebla"/>
+<node id="Zacatecas"/>
+<node id="Campeche"/>
+<node id="Oaxaca"/>
+<node id="Quintana Roo"/>
+<node id="Yucatan"/>
+<node id="Baja California"/>
+<node id="Colima"/>
+<node id="Jalisco"/>
+<node id="Sinaloa"/>
+<node id="Aguascalientes"/>
+<node id="Coahuila"/>
+<node id="Distrito Federal"/>
+<node id="Durango"/>
+<node id="Guanajuato"/>
+<node id="Guerrero"/>
+<node id="Hidalgo"/>
+<node id="Mexico"/>
+<node id="Michoacan"/>
+<node id="Morelos"/>
+<node id="Queretaro"/>
+<node id="San Luis Potosi"/>
+<node id="Sonora"/>
+<node id="Tabasco"/>
+<node id="Veracruz"/>
+<node id="Tamaulipas"/>
+<node id="Chiapas"/></nodeclass>
+</nodes>
+<networks>
+<network sourceType="Agent" source="O_market" targetType="Agent" target="D_market" id="O_market x D_market" isDirected="true" allowSelfLoops="true">
+<link source="Yucatan" target="Yucatan" value="9.00826"/>
+<link source="Aguascalientes" target="Nayarit" value="80.51915"/>
+<link source="Aguascalientes" target="Nuevo Leon" value="30.0"/>
+<link source="Aguascalientes" target="Zacatecas" value="26.0"/>
+<link source="Aguascalientes" target="Puebla" value="36.0"/>
+<link source="Nayarit" target="Nayarit" value="21.806158"/>
+<link source="Quintana Roo" target="Quintana Roo" value="63.324776"/>
+<link source="Sinaloa" target="Puebla" value="35.886707"/>
+<link source="Chiapas" target="Yucatan" value="16.277779"/>
+<link source="Chihuahua" target="Chihuahua" value="35.396553"/>
+<link source="Michoacan" target="Nayarit" value="36.852314"/>
+<link source="Michoacan" target="Jalisco" value="44.911316"/>
+<link source="Michoacan" target="Morelos" value="39.40231"/>
+<link source="Michoacan" target="Michoacan" value="34.58896"/>
+<link source="Michoacan" target="Guanajuato" value="40.066666"/>
+<link source="Michoacan" target="Nuevo Leon" value="76.40118"/>
+<link source="Michoacan" target="Durango" value="34.563805"/>
+<link source="Michoacan" target="Chihuahua" value="76.311226"/>
+<link source="Michoacan" target="Aguascalientes" value="34.48016"/>
+<link source="Michoacan" target="Tabasco" value="33.01992"/>
+<link source="Michoacan" target="Queretaro" value="37.93254"/>
+<link source="Michoacan" target="Hidalgo" value="29.17"/>
+<link source="Michoacan" target="San Luis Potosi" value="31.36111"/>
+<link source="Michoacan" target="Coahuila" value="30.997154"/>
+<link source="Michoacan" target="Veracruz" value="41.95669"/>
+<link source="Michoacan" target="Mexico" value="39.44831"/>
+<link source="Michoacan" target="Sonora" value="43.25421"/>
+<link source="Michoacan" target="Baja California" value="41.694443"/>
+<link source="Michoacan" target="Guerrero" value="37.373016"/>
+<link source="Michoacan" target="Yucatan" value="40.917175"/>
+<link source="Michoacan" target="Distrito Federal" value="38.295258"/>
+<link source="Distrito Federal" target="Quintana Roo" value="66.039"/>
+<link source="Distrito Federal" target="Oaxaca" value="42.5502"/>
+<link source="Distrito Federal" target="Yucatan" value="59.930023"/>
+<link source="Distrito Federal" target="Campeche" value="53.566135"/>
+<link source="Puebla" target="Veracruz" value="43.283726"/>
+<link source="Puebla" target="Tamaulipas" value="40.964706"/>
+<link source="Puebla" target="Yucatan" value="39.60811"/>
+<link source="Puebla" target="Chiapas" value="34.151394"/>
+<link source="Jalisco" target="Jalisco" value="32.291626"/>
+<link source="Jalisco" target="Colima" value="48.54"/>
+<link source="Jalisco" target="Baja California" value="47.47619"/>
+<link source="Jalisco" target="Zacatecas" value="32.177418"/>
+<link source="Jalisco" target="Sinaloa" value="42.36905"/>
+<link source="Nuevo Leon" target="Tamaulipas" value="48.073414"/></network>
+</networks>
+</MetaNetwork>
+</DynamicMetaNetwork>
+

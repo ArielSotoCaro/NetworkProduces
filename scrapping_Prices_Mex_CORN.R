@@ -12,7 +12,7 @@ library(tidyverse)
 Weeks <- 3
 # Every month
 Months <- seq(1,12)
-# The availble data range is 2000 - 2018
+# The availble data range is 1998 - 2018
 Years <- seq(1998,2018)
 
 
