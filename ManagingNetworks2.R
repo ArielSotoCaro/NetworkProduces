@@ -271,7 +271,7 @@ plot(comm_undir, g_undir_lst[[21]])
 # setting some examples of weights
 E(g_undir_lst[[1]])$weight <- edges_list[[1]]$mPrice
 E(g_undir_lst[[1]])$weight <- edges_list[[1]]$distance
-
+E(g_undir_lst[[1]])$weight <- edges_list[[1]]$mPrice/edges_list[[1]]$distance
 
 # CLustering Coeff
 transitivity(g_undir_lst[[1]], type = "weighted")
