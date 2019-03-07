@@ -2,6 +2,7 @@
 library(data.table) # rbindlist
 library(stringr)
 library(dplyr)
+library(xlsx)
 
 setwd("C:/Users/Ariel/Dropbox/UFL/Spatial Networks/Project/NetworkProduces")
 
@@ -262,9 +263,20 @@ library(xlsx)
 write.xlsx(Avocado, "Avocado_data.xlsx")
 write.xlsx(Corn, "Corn_data.xlsx")
 write.xlsx(Tomato, "Tomato_data.xlsx")
+# This is useful for import into ORA
 
-# # create just one file
-# Produces <- bind_rows(Avocado,Tomato)
-# Produces <- bind_rows(Produces,Corn)
-# 
-# write.xlsx(Produces, "Total_produce_data.xlsx")
+# To work into R is requiere 2 types of dataframe.
+# One for vertices w/attributes and other with the edges w/attributes
+
+# ==================
+# Data for R
+# ..................
+Avocado <- read_excel("C:/Users/Ariel/Dropbox/UFL/Spatial Networks/Project/NetworkProduces/Avocado_data.xlsx")
+Avocado <- Avocado[,2:5]
+
+avo_vertex <- unique(rbind(as.matrix(Avocado[,'Origen']),as.matrix(Avocado[,'Destino'])))
+avo_vertex <- data.frame(avo_vertex) 
+names(avo_vertex) <- "States"
+avo_vertex <- inner_join(avo_vertex,coor,by = "States")
+
+avo_edges <- Avocado[Avocado$year=="2018",c("Origen","Destino","mPrice")]
