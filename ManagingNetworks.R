@@ -2,62 +2,72 @@ setwd("C:/Users/Ariel/Dropbox/UFL/Spatial Networks/Project/NetworkProduces")
 
 # folderData <- "C:/Users/Ariel/Dropbox/UFL/Spatial Networks/Project/NetworkProduces"
 # paste0(folderData,"/","PricesMexico_lst_AVOCADO-extra.RData")
-
-
-
-library(readxl)
-library(dplyr)
-library(causaleffect)
-library(igraph)
-library(purrr)
+library(pacman)
+p_load(readxl,dplyr,causaleffect,igraph,purrr)
 
 # To work into R is requiere 2 types of dataframe.
 # One for vertices w/attributes and other with the edges w/attributes
 
+
+# ....................................
+# Creating matrix of distances =======
+#
+
+# Loading data of coordetanes Lat-Lon for every Mexican State
 coor <- read_xlsx("States_coordenates.xlsx")
 
-# ------------
-# Creating matrix of distances
 # the function to compute strigt-line distances is: "function_matrixDistances.R"
 # https://eurekastatistics.com/calculating-a-distance-matrix-for-geographic-points-using-r/
-  
 source("function_matrixDistances.R")
 
+# Creating a dataframe compatible with the function above
 States_data <- data.frame(States=coor$States,lat=coor$Latitude,lon=coor$Longitude)
 
+# Creating matrix of distances itself:
 MatrixD <- round(GeoDistanceInMetresMatrix(States_data) / 1000)
 # distance represented in straigt line in KM
+# Adding names
 colnames(MatrixD) <- coor$States
 rownames(MatrixD) <- coor$States
+# ..............................
+
+# Importing GDP percapita data
+gdp <- read_xlsx("GDP-pc-MEX.xlsx")
 
 
-
+# .............................
 # forming the data
-# AVOCADO
-# ======================
+#
+# AVOCADO =========
+# 
 Avocado <- read_excel("Avocado_data.xlsx")
 Avocado <- Avocado[,-1]
 
 # preparing vertices data
-avo_vertex <- unique(rbind(as.matrix(Avocado[,'Origen']),as.matrix(Avocado[,'Destino']))) %>%
+avo_vertex <- Avocado %>% filter(year=='1998') %>% select(Origen,Destino)
+
+avo_vertex <- unique(rbind(as.matrix(avo_vertex[,1]),as.matrix(avo_vertex[,2]))) %>%
                 data.frame()
 names(avo_vertex) <- "States"
 avo_vertex <- inner_join(avo_vertex,coor,by = "States")
 
+# adding attributes to vertices
+avo_vertex2 <- avo_vertex %>% inner_join(gdp[,c('States','y1998')],by = "States")
+
 # preparing edges data
+# This is a list because there are data for 21 years: 1998:2018
 avo_edges <- list()
 for(i in 1:21){
 avo_edges[[i]] <- Avocado[Avocado$year==1997+i,c("Origen","Destino","mPrice")]
 }
 
-# adding distances
+# adding distances FUNCTION 
 FindDistance <- function(origin,destiny){
   d <- MatrixD[as.matrix(origin),as.matrix(destiny)]
   return(d)
 }
 
 # FindDistance("Sonora","Aguascalientes")
-
 
 # This procedure compute the distances for each state for each year
 for(i in 1:21){
@@ -71,7 +81,10 @@ for(j in 1:nrow(avo_edges_lst)){
 
 # avo_edges[[3]]
 
-# Undirected
+
+# ............................
+# Creating Undirected NW ======
+#
 g_avo <- graph_from_data_frame(d = avo_edges[[1]], vertices = avo_vertex, directed = FALSE)
 plot(g_avo)
 g_avo$name <- "Avocado network"
@@ -108,8 +121,9 @@ plot(g_avo,
      edge.width = w1,
      layout = m1)
 
-
-# Directed
+# ............................
+# Directed Network ==========
+#
 g <- graph_from_data_frame(d = avo_edges[[1]], vertices = avo_vertex, directed = T)
 
 is.directed(g)
@@ -296,7 +310,7 @@ count_triangles(g, vids='Michoacan')
 g.tr <- transitivity(g)
 g.tr
 
-# Calculate the local transitivity for vertex BUBBA.
+# Calculate the local transitivity for vertex Michoacan
 transitivity(g, vids='Michoacan', type = "local")
 
 # Identify the largest cliques in the network
