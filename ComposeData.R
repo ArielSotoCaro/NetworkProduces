@@ -255,7 +255,8 @@ Corn <- inner_join(Corn,coor,by = c("Destino" = "States"),suffix = c(".Origin","
 Avocado <- inner_join(Avocado,coor,by = c("Origen" = "States"))
 Avocado <- inner_join(Avocado,coor,by = c("Destino" = "States"),suffix = c(".Origin",".Destiny"))
 
-
+Avocado <- Avocado %>% group_by(year,Origen,Destino,produce,Latitude.Origin,Latitude.Destiny,Longitude.Origin,Longitude.Destiny) %>% 
+                  summarize(mPrice = mean(mPrice)) %>% as.data.frame()
 # ==================
 # STORING DATA
 # ..................
