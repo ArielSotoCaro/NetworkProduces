@@ -230,83 +230,131 @@ for(w in 1:21){
 # ...................................
 # ...................................
 # TOMATO
-par(mfrow=c(1,1),mar=c(0,0,1,0))
-png('tomato_1998.png', res = 100, width = 1000,height = 500)
-plot.igraph(g_dir_Tomato_lst_W[[1]],vertex.label=V(g_dir_Tomato_lst_W[[1]])$name,
-            # layout=layout.fruchterman.reingold,
-            layout=layout_nicely(g_dir_Tomato_lst_W[[1]]),
-            edge.color="black",
-            edge.width=E(g_dir_Tomato_lst_W[[1]])$weight/10,
-            edge.arrow.size =.1,
-            edge.color="gray85",
-            vertex.size = Tomato_vertices_list_w[[1]]$y1998/5000,
+par(mfrow=c(1,1),mar=c(0,0,0,0))
+# png('tomato_1998.png', 600,600)
+pdf('tomato_1998.pdf')
+
+plot(g_dir_Tomato_lst_W[[1]],vertex.label=V(g_dir_Tomato_lst_W[[1]])$name,
+     layout=layout_nicely(g_dir_Tomato_lst_W[[1]]),
+     edge.width=E(g_dir_Tomato_lst_W[[1]])$weight/4,
+     edge.arrow.size =.4,
+     edge.color="gray35",
+     vertex.size = degree_Tomato_dir[[1]]*1.1,
+     vertex.label.color='black',
+     vertex.label.cex=.7,
+     vertex.label.font=3,
+     vertex.color="dodgerblue4",
+     main="Tomato: 1998")
+dev.off()
+
+pdf('tomato_2008.pdf')
+plot(g_dir_Tomato_lst_W[[10]],vertex.label=V(g_dir_Tomato_lst_W[[10]])$name,
+     edge.width=E(g_dir_Tomato_lst_W[[10]])$weight/5,
+     edge.arrow.size =.5,
+     edge.color="gray35",
+     vertex.size = degree_Tomato_dir[[10]]*1.2,
+     vertex.label.color='black',
+     vertex.label.cex=.7,
+     vertex.label.font=3,
+     vertex.color="dodgerblue4",
+     main="Tomato: 2008")
+dev.off()
+
+pdf('tomato_2018.pdf')
+plot.igraph(g_dir_Tomato_lst_W[[21]],vertex.label=V(g_dir_Tomato_lst_W[[21]])$name,
+            layout=layout_nicely(g_dir_Tomato_lst_W[[21]]),
+            edge.width=E(g_dir_Tomato_lst_W[[21]])$weight/5,
+            edge.arrow.size =.5,
+            edge.color="gray35",
+            vertex.size = degree_Tomato_dir[[21]]*1.3,
             vertex.label.color='black',
             vertex.label.cex=.7,
-            vertex.label.font=2,
-            vertex.color="orange",
-            main="Tomato: 1998")
-dev.off()
-plot.igraph(g_dir_Tomato_lst_W[[10]],vertex.label=V(g_dir_Tomato_lst_W[[10]])$name,
-            layout=layout.fruchterman.reingold,
-            edge.color="black",
-            edge.width=E(g_dir_Tomato_lst_W[[10]])$weight*.3,
-            edge.arrow.size =.2,
-            main="Tomato: 2008")
-
-plot.igraph(g_dir_Tomato_lst_W[[21]],vertex.label=V(g_dir_Tomato_lst_W[[21]])$name,
-            layout=layout.fruchterman.reingold,
-            edge.color="black",
-            edge.width=E(g_dir_Tomato_lst_W[[21]])$weight*.2,
-            edge.arrow.size =.2,
+            vertex.label.font=3,
+            vertex.color="dodgerblue4",
             main="Tomato: 2018")
 dev.off()
 
 # AVOCADO
-par(mfrow=c(1,3))
-plot.igraph(g_dir_Avocado_lst_W[[1]],vertex.label=V(g_dir_Avocado_lst_W[[1]])$name,
-            layout=layout.fruchterman.reingold,
-            edge.color="black",
-            edge.width=E(g_dir_Avocado_lst_W[[1]])$weight,
-            edge.arrow.size =.3,
+par(mfrow=c(1,1), mar=c(0,0,0,0))
+pdf('avocado_1998.pdf')
+plot(g_dir_Avocado_lst_W[[1]],vertex.label=V(g_dir_Avocado_lst_W[[1]])$name,
+            layout=layout_nicely(g_dir_Avocado_lst_W[[1]]),
+            edge.width=E(g_dir_Avocado_lst_W[[1]])$weight/2,
+            edge.arrow.size =.4,
+            edge.color="gray35",
+            vertex.size = degree_Avocado_dir[[1]]*1,
+            vertex.label.color='black',
+            vertex.label.cex=.7,
+            vertex.label.font=3,
+            vertex.color="dodgerblue4",
             main="Avocado: 1998")
-
-plot.igraph(g_dir_Avocado_lst_W[[10]],vertex.label=V(g_dir_Avocado_lst_W[[10]])$name,
-            layout=layout.fruchterman.reingold,
-            edge.color="black",
-            edge.width=E(g_dir_Avocado_lst_W[[10]])$weight*.3,
-            edge.arrow.size =.2,
+dev.off()
+pdf('avocado_2008.pdf')
+plot(g_dir_Avocado_lst_W[[10]],vertex.label=V(g_dir_Avocado_lst_W[[10]])$name,
+            layout=layout_nicely(g_dir_Avocado_lst_W[[10]]),
+            edge.width=E(g_dir_Avocado_lst_W[[10]])$weight/4,
+            edge.arrow.size =.4,
+            edge.color="gray35",
+            vertex.size = degree_Avocado_dir[[10]]*1,
+            vertex.label.color='black',
+            vertex.label.cex=.7,
+            vertex.label.font=3,
+            vertex.color="dodgerblue4",
             main="Avocado: 2008")
-
-plot.igraph(g_dir_Avocado_lst_W[[21]],vertex.label=V(g_dir_Avocado_lst_W[[21]])$name,
-            layout=layout.fruchterman.reingold,
-            edge.color="black",
-            edge.width=E(g_dir_Avocado_lst_W[[21]])$weight*.2,
-            edge.arrow.size =.2,
+dev.off()
+pdf('avocado_2018.pdf')
+plot(g_dir_Avocado_lst_W[[21]],vertex.label=V(g_dir_Avocado_lst_W[[21]])$name,
+            layout=layout_nicely(g_dir_Avocado_lst_W[[21]]),
+            edge.width=E(g_dir_Avocado_lst_W[[21]])$weight/7,
+            edge.arrow.size =.4,
+            edge.color="gray35",
+            vertex.size = degree_Avocado_dir[[21]]*1,
+            vertex.label.color='black',
+            vertex.label.cex=.7,
+            vertex.label.font=3,
+            vertex.color="dodgerblue4",
             main="Avocado: 2018")
 dev.off()
 
 # CORN
-par(mfrow=c(1,3))
-plot.igraph(g_dir_Corn_lst_W[[1]],vertex.label=V(g_dir_Corn_lst_W[[1]])$name,
-            layout=layout.fruchterman.reingold,
-            edge.color="black",
-            edge.width=E(g_dir_Corn_lst_W[[1]])$weight,
-            edge.arrow.size =.3,
-            vertex.size=g_dir_Corn_lst_W,
+par(mfrow=c(1,1))
+pdf('corn_1998.pdf')
+plot(g_dir_Corn_lst_W[[1]],vertex.label=V(g_dir_Corn_lst_W[[1]])$name,
+            layout=layout_nicely(g_dir_Corn_lst_W[[1]]),
+            edge.width=E(g_dir_Corn_lst_W[[1]])$weight/1,
+            edge.arrow.size =.4,
+            edge.color="gray35",
+            vertex.size = degree_Corn_dir[[1]]*1.5,
+            vertex.label.color='black',
+            vertex.label.cex=.7,
+            vertex.label.font=3,
+            vertex.color="dodgerblue4",
             main="Corn: 1998")
-
-plot.igraph(g_dir_Corn_lst_W[[10]],vertex.label=V(g_dir_Corn_lst_W[[10]])$name,
-            layout=layout.fruchterman.reingold,
-            edge.color="black",
-            edge.width=E(g_dir_Corn_lst_W[[10]])$weight*.3,
-            edge.arrow.size =.2,
+dev.off()
+pdf('corn_2008.pdf')
+plot(g_dir_Corn_lst_W[[10]],vertex.label=V(g_dir_Corn_lst_W[[10]])$name,
+            layout=layout_nicely(g_dir_Corn_lst_W[[10]]),
+            edge.width=E(g_dir_Corn_lst_W[[10]])$weight/1.5,
+            edge.arrow.size =.4,
+            edge.color="gray35",
+            vertex.size = degree_Corn_dir[[10]]*1.5,
+            vertex.label.color='black',
+            vertex.label.cex=.7,
+            vertex.label.font=3,
+            vertex.color="dodgerblue4",
             main="Corn: 2008")
-
+dev.off()
+pdf('corn_2018.pdf')
 plot.igraph(g_dir_Corn_lst_W[[21]],vertex.label=V(g_dir_Corn_lst_W[[21]])$name,
-            layout=layout.fruchterman.reingold,
-            edge.color="black",
-            edge.width=E(g_dir_Corn_lst_W[[21]])$weight*.2,
-            edge.arrow.size =.2,
+            layout=layout_nicely(g_dir_Corn_lst_W[[21]]),
+            edge.width=E(g_dir_Corn_lst_W[[21]])$weight/2,
+            edge.arrow.size =.4,
+            edge.color="gray35",
+            vertex.size = degree_Corn_dir[[21]]*1.5,
+            vertex.label.color='black',
+            vertex.label.cex=.7,
+            vertex.label.font=3,
+            vertex.color="dodgerblue4",
             main="Corn: 2018")
 dev.off()
 # ...................................

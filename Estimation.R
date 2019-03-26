@@ -298,13 +298,13 @@ library(systemfit)
 library(plyr)
 
 
-Node_tomato <-dfT$authority  ~ dfT$GDP + dfT$price + dfT$iPrice + as.factor(dfT$region)
-Node_avocado <-dfA$authority  ~ dfA$GDP + dfA$price + dfA$iPrice + as.factor(dfA$region)
-Node_corn <-dfC$authority  ~ dfC$GDP + dfC$price + dfC$iPrice + as.factor(dfC$region)
+aNode_tomato <-dfT$authority  ~ dfT$GDP + dfT$price + dfT$iPrice + as.factor(dfT$region)
+aNode_avocado <-dfA$authority  ~ dfA$GDP + dfA$price + dfA$iPrice + as.factor(dfA$region)
+aNode_corn <-dfC$authority  ~ dfC$GDP + dfC$price + dfC$iPrice + as.factor(dfC$region)
 
-Node_tomato <-dfT$strength  ~ dfT$GDP + dfT$price + dfT$iPrice + as.factor(dfT$region)
-Node_avocado <-dfA$strength  ~ dfA$GDP + dfA$price + dfA$iPrice + as.factor(dfA$region)
-Node_corn <-dfC$strength  ~ dfC$GDP + dfC$price + dfC$iPrice + as.factor(dfC$region)
+sNode_tomato <-dfT$strength  ~ dfT$GDP + dfT$price + dfT$iPrice + as.factor(dfT$region)
+sNode_avocado <-dfA$strength  ~ dfA$GDP + dfA$price + dfA$iPrice + as.factor(dfA$region)
+sNode_corn <-dfC$strength  ~ dfC$GDP + dfC$price + dfC$iPrice + as.factor(dfC$region)
 
 # the data set are not equal wrt # of rows. Whit this I'm adding rows with zeros
 temp <- as.data.frame(matrix(0,24,10))
@@ -326,8 +326,15 @@ nrow(dfA)
 nrow(dfC)
 
 
-sys <- list(Node_tomato,Node_avocado,Node_corn)
+sys_a <- list(aNode_tomato,aNode_avocado,aNode_corn)
+sys_s <- list(sNode_tomato,sNode_avocado,sNode_corn)
 
-mex.sys <- systemfit(sys, method="SUR")
-summary(mex.sys)
+mex.sys.a <- systemfit(sys_a, method="SUR")
+mex.sys.s <- systemfit(sys_s, method="SUR")
 
+summary(mex.sys.a)
+summary(mex.sys.s)
+library(stargazer)
+stargazer(coef(mex.sys.a),coef(mex.sys.s),align=TRUE,type = 'text',flip = TRUE)
+library(texreg)
+texreg(list(mex.sys.a,mex.sys.s))
