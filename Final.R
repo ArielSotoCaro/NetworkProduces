@@ -289,6 +289,7 @@ plot(g_dir_Avocado_lst_W[[1]],vertex.label=V(g_dir_Avocado_lst_W[[1]])$name,
             vertex.color="dodgerblue4",
             main="Avocado: 1998")
 dev.off()
+
 pdf('avocado_2008.pdf')
 plot(g_dir_Avocado_lst_W[[10]],vertex.label=V(g_dir_Avocado_lst_W[[10]])$name,
             layout=layout_nicely(g_dir_Avocado_lst_W[[10]]),
@@ -302,6 +303,7 @@ plot(g_dir_Avocado_lst_W[[10]],vertex.label=V(g_dir_Avocado_lst_W[[10]])$name,
             vertex.color="dodgerblue4",
             main="Avocado: 2008")
 dev.off()
+
 pdf('avocado_2018.pdf')
 plot(g_dir_Avocado_lst_W[[21]],vertex.label=V(g_dir_Avocado_lst_W[[21]])$name,
             layout=layout_nicely(g_dir_Avocado_lst_W[[21]]),
@@ -331,6 +333,7 @@ plot(g_dir_Corn_lst_W[[1]],vertex.label=V(g_dir_Corn_lst_W[[1]])$name,
             vertex.color="dodgerblue4",
             main="Corn: 1998")
 dev.off()
+
 pdf('corn_2008.pdf')
 plot(g_dir_Corn_lst_W[[10]],vertex.label=V(g_dir_Corn_lst_W[[10]])$name,
             layout=layout_nicely(g_dir_Corn_lst_W[[10]]),
@@ -344,6 +347,7 @@ plot(g_dir_Corn_lst_W[[10]],vertex.label=V(g_dir_Corn_lst_W[[10]])$name,
             vertex.color="dodgerblue4",
             main="Corn: 2008")
 dev.off()
+
 pdf('corn_2018.pdf')
 plot.igraph(g_dir_Corn_lst_W[[21]],vertex.label=V(g_dir_Corn_lst_W[[21]])$name,
             layout=layout_nicely(g_dir_Corn_lst_W[[21]]),

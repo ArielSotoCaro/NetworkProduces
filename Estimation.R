@@ -164,6 +164,7 @@ for (i in 1:17){
 }
 
 
+
 # Creating the complete dataset
 dfC <- do.call(rbind.data.frame, d_undir_C)
 dfC$produce <- 'corn'
@@ -174,6 +175,9 @@ dfC$produce <- 'corn'
 dfTotal <- rbind(dfC,dfA)
 dfTotal <- rbind(dfTotal,dfT)
 
+# Setting the factor level of REGION
+dfTotal$region <- factor(dfTotal$region)
+dfTotal$region <- relevel(dfTotal$region, ref ='NW')
 
 # r1 <- DC ~ GDP + price
 # r2 <- math~female + as.numeric(ses) + science
@@ -194,46 +198,93 @@ summary(ols<- lm(DC ~ GDP + price, data=df))
 plot(df$GDP, df$DC, pch=19, xlab="x1", ylab="y")
 abline(lm(df$DC~df$GDP),lwd=3, col="red")
 
-summary(fixed.dum <-lm(DC ~ GDP + price + as.factor(States) -1, data=df))
+summary(fixed.dum.a <-lm(authority ~ I(GDP/10000) + log(price) + log(iPrice) + region, data=dfTotal))
+summary(fixed.dum.s <-lm(strength ~ I(GDP/10000) + log(price) + log(iPrice) + region, data=dfTotal))
 
+library(texreg)
+texreg(list(fixed.dum.a,fixed.dum.s))
+stargazer(fixed.dum.a,fixed.dum.s, type='text')
 
 library(plm)
-summary(fixed <-plm(authority ~ GDP + price + iPrice + as.factor(region), data=dfT, index=c("States","year"), model="within"))
-summary(fixed <-plm(DC ~ GDP + price + iPrice + as.factor(region), data=dfT, index=c("States","year"), model="within"))
-summary(fixed <-plm(strength ~ GDP + price + iPrice + as.factor(region), data=dfT, index=c("States","year"), model="within"))
+# Tomato
+dfT. <-  dfT[!duplicated(dfT[c("States","year")]),]
+summary(t.fixed.a <-plm(authority ~ GDP + price + iPrice + region, data=dfT.,
+                      index=c("States","year"), model="within"))
+summary(t.fixed <-plm(DC ~ GDP + price + iPrice + region, data=dfT.,
+                    index=c("States","year"), model="within"))
+summary(t.fixed.s <-plm(strength ~ GDP + price + iPrice + region, data=dfT.,
+                      index=c("States","year"), model="within"))
 
-summary(fixed <-plm(authority ~ GDP + price + iPrice + as.factor(region), data=dfA, index=c("States","year"), model="within"))
-summary(fixed <-plm(DC ~ GDP + price + iPrice + as.factor(region), data=dfA, index=c("States","year"), model="within"))
-summary(fixed <-plm(strength ~ GDP + price + iPrice + as.factor(region), data=dfA, index=c("States","year"), model="within"))
+stargazer(t.fixed.a,t.fixed.s, type='text')
 
-summary(fixed <-plm(authority ~ GDP + price + iPrice + as.factor(region), data=dfC, index=c("States","year"), model="within"))
-summary(fixed <-plm(DC ~ GDP + price + iPrice + as.factor(region), data=dfC, index=c("States","year"), model="within"))
-summary(fixed <-plm(strength ~ GDP + price + iPrice + as.factor(region), data=dfC, index=c("States","year"), model="within"))
+# Avocado
+dfA. <-  dfA[!duplicated(dfA[c("States","year")]),]
+summary(a.fixed.a <-plm(authority ~ GDP + price + iPrice + region, data=dfA.,
+                      index=c("States","year"), model="within"))
+summary(a.fixed <-plm(DC ~ GDP + price + iPrice + region, data=dfA.,
+                    index=c("States","year"), model="within"))
+summary(a.fixed.s <-plm(strength ~ GDP + price + iPrice + region, data=dfA.,
+                      index=c("States","year"), model="within"))
 
+stargazer(a.fixed.a,a.fixed.s, type='text')
 
-fixef(fixed)    # Display the fixed effects (constants for each State)
-pFtest(fixed, ols)    # Testing for fixed effects, null: OLS better than fixed
+# Corn
+dfC. <-  dfC[!duplicated(dfC[c("States","year")]),]
+summary(c.fixed.a <-plm(authority ~ GDP + price + iPrice + region, data=dfC.,
+                        index=c("States","year"), model="within"))
+summary(c.fixed <-plm(DC ~ GDP + price + iPrice + region, data=dfC.,
+                      index=c("States","year"), model="within"))
+summary(c.fixed.s <-plm(strength ~ GDP + price + iPrice + region, data=dfC.,
+                        index=c("States","year"), model="within"))
+stargazer(c.fixed.a,c.fixed.s, type='text')
+
+fixef(t.fixed.s)    # Display the fixed effects (constants for each State)
+pFtest(t.fixed.a, fixed.dum.a)    # Testing for fixed effects, null: OLS better than fixed
+pFtest(t.fixed.s, fixed.dum.s)
+pFtest(a.fixed.a, fixed.dum.a)
+pFtest(a.fixed.s, fixed.dum.s)
+pFtest(c.fixed.a, fixed.dum.a) # ??
+pFtest(c.fixed.s, fixed.dum.s)
 # if the p-value is < 0.05 then the fixed effects model is a better choice
 
-summary(random <-plm(DC ~ GDP + price + iPrice + as.factor(region), data=dfT, index=c("States", "year"), model="random"))
-summary(random <-plm(authority ~ GDP + price + iPrice + as.factor(region) , data=dfT, index=c("States", "year"), model="random"))
-summary(random <-plm(strength ~ GDP + price + iPrice + as.factor(region) , data=dfT, index=c("States", "year"), model="random"))
+# RANDOM EFFECTS
+# TOMATO
+# summary(random <-plm(DC ~ GDP + price + iPrice + region, data=dfT.,
+# index=c("States", "year"), model="random"))
+summary(t.random.a <-plm(authority ~ GDP + price + iPrice + region, data=dfT.,
+                         index=c("States", "year"), model="random"))
+summary(t.random.s <-plm(strength ~ GDP + price + iPrice + region, data=dfT.,
+                         index=c("States", "year"), model="random"))
+# AVOCADO
+# summary(random <-plm(DC ~ GDP + price + iPrice + region, data=dfA.,
+# index=c("States", "year"), model="random"))
+summary(a.random.a <-plm(authority ~ GDP + price + iPrice + region, data=dfA.,
+                         index=c("States", "year"), model="random"))
+summary(a.random.s <-plm(strength ~ GDP + price + iPrice + region, data=dfA.,
+                         index=c("States", "year"), model="random"))
 
-summary(random <-plm(DC ~ GDP + price + iPrice + as.factor(region), data=dfA, index=c("States", "year"), model="random"))
-summary(random <-plm(authority ~ GDP + price + iPrice + as.factor(region) , data=dfA, index=c("States", "year"), model="random"))
-summary(random <-plm(strength ~ GDP + price + iPrice + as.factor(region) , data=dfA, index=c("States", "year"), model="random"))
-
-summary(random <-plm(DC ~ GDP + price + iPrice + as.factor(region), data=dfC, index=c("States", "year"), model="random"))
-summary(random <-plm(authority ~ GDP + price + iPrice + as.factor(region) , data=dfC, index=c("States", "year"), model="random"))
-summary(random <-plm(strength ~ GDP + price + iPrice + as.factor(region) , data=dfC, index=c("States", "year"), model="random"))
+# CORN
+# summary(random <-plm(DC ~ GDP + price + iPrice + region, data=dfC.,
+#                      index=c("States", "year"), model="random"))
+summary(c.random.a <-plm(authority ~ GDP + price + iPrice + region, data=dfC.,
+                     index=c("States", "year"), model="random"))
+summary(c.random.s <-plm(strength ~ GDP + price + iPrice + region, data=dfC.,
+                     index=c("States", "year"), model="random"))
 
 # FIXED OR RANDOM?
-phtest(fixed, random)
+phtest(t.fixed.a, t.random.a)
+phtest(t.fixed.s, t.random.s)
+
+phtest(a.fixed.a, a.random.a)
+phtest(a.fixed.s, a.random.s)
+
+phtest(c.fixed.a, c.random.a)
+phtest(c.fixed.s, c.random.s)
 # if this number is < 0.05 then use fixed effects
 
 # Testing for time-fixed effects
 summary(fixed.time <- plm(DC ~ GDP + price + factor(year), data=df, index=c("States", "year"), model="within"))
-summary(fixed.time <- plm(authority ~ GDP + price + factor(year), data=df, index=c("States", "year"), model="within"))
+summary(fixed.time <- plm(authority ~ GDP + price + factor(year), data=dfT., index=c("States", "year"), model="within"))
 
 # Testing time-fixed effects. The null is that no time-fixed effects needed
 pFtest(fixed.time, fixed)
@@ -266,15 +317,34 @@ pcdtest(fixed.time, test = c("cd"))
 # if p-value <0.05 there is cross-sectional dependence (bad)
 
 # Testing for serial correlation
-pbgtest(fixed)
-pbgtest(random)
+pbgtest(t.fixed.a)
+pbgtest(t.fixed.s)
+pbgtest(a.fixed.a)
+pbgtest(a.fixed.s)
+pbgtest(c.fixed.a)
+pbgtest(c.fixed.s)
+
+pbgtest(t.random.a)
+pbgtest(t.random.s)
+pbgtest(a.random.a)
+pbgtest(a.random.s)
+pbgtest(c.random.a)
+pbgtest(c.random.s)
+
 pbgtest(fixed.time)
 # No serial correlation if p>0.05
 
 # Testing for heteroskedasticity 
 library(lmtest)
 bptest(DC ~ GDP + price + factor(States), data = df, studentize=F)
-bptest(authority ~ GDP + price + factor(States), data = df, studentize=F)
+bptest(authority ~ GDP + price + iPrice + region, data = dfT., studentize=F)
+bptest(strength ~ GDP + price + iPrice + region, data = dfT., studentize=F)
+
+bptest(authority ~ GDP + price + iPrice + region, data = dfA., studentize=F)
+bptest(strength ~ GDP + price + iPrice + region, data = dfA., studentize=F)
+
+bptest(authority ~ GDP + price + iPrice + region, data = dfC., studentize=F)
+bptest(strength ~ GDP + price + iPrice + region, data = dfC., studentize=F)
 # if p<0.05 presence of Heteroskedasticity
 
 # Controlling for heteroskedasticity: Robust covariance matrix estimation (Sandwich estimator)
@@ -287,8 +357,8 @@ coeftest(random, vcovHC(random, type = "HC3")) # Heteroskedasticity consistent c
 # Controlling for heteroskedasticity: Fixed effects
 coeftest(fixed)      # Original coefficients
 coeftest(fixed, vcovHC) # Heteroskedasticityconsistent coefficients
-coeftest(fixed, vcovHC(fixed, method = "arellano")) # Heteroskedasticityconsistent coefficients (Arellano)
-coeftest(fixed, vcovHC(fixed, type = "HC3")) # Heteroskedasticityconsistent coefficients, type 3
+coeftest(fixed, vcovHC(fixed, method = "arellano")) # Heteroskedasticity consistent coefficients (Arellano)
+coeftest(fixed, vcovHC(fixed, type = "HC3")) # Heteroskedasticity consistent coefficients, type 3
 
 
 
